@@ -1,0 +1,53 @@
+.page-18 {
+
+  .content {
+    background: linear-gradient(to bottom, #3f4c6b 0%, #7673c4 100%);
+  }
+
+  .grass1 {
+    background-image: url('../assets/img/page18/Grass1.png');
+    height: 66%;
+    width: 100%;
+    top: 3%;
+    left: 0;
+    z-index: 100;
+    background-size: cover;
+  }
+  .sheep1 {
+
+    background-image: url('../assets/img/page18/Sheep1.png');
+    height: 68%;
+    width: 60%;
+    bottom: 0;
+    right: 0;
+    z-index: 200;
+    background-size: cover;
+  }
+  .sheep2 {
+    background-image: url('../assets/img/page18/Sheep2.png');
+    height: 78%;
+    width: 70%;
+    bottom: 0;
+    left: 0;
+    z-index: 175;
+  }
+  .sheep3 {
+    background-image: url('../assets/img/page18/Sheep3.png');
+    height: 100%;
+    width: 100%;
+    top: 3%;
+    left: 0;
+    z-index: 150;
+
+  }
+
+  .sky {
+    background-image: url('../assets/img/page15/Sky.png');
+    width: 100%;
+    top: -35%;
+    left: 0;
+    height: 75%;
+    z-index: 10;
+  }
+
+}

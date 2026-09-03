@@ -1,0 +1,574 @@
+.page-24 {
+
+  .sky {
+    background-image: url('../assets/img/page24/Sky.jpg');
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 0;
+    background-size: cover;
+  }
+
+  .sun {
+    width: 20%;
+    top: 5%;
+    left: 63%;
+    height: 42%;
+    z-index: 5;
+  }
+
+  .cloud1 {
+    width: 8%;
+    top: 10%;
+    left: 50%;
+    height: 42%;
+  }
+
+  .cloud2 {
+    width: 12%;
+    top: 7%;
+    left: 0;
+    height: 10%;
+  }
+
+  .bgTree1 {
+    background-image: url('../assets/img/common/GreenTree1.png');
+    height: 15%;
+    width: 5%;
+    top: 2%;
+    left: 20%;
+    z-index: 6;
+    transform: scaleX(-1);
+  }
+
+  .bgTree2 {
+    background-image: url('../assets/img/common/GreenTree2.png');
+    height: 15%;
+    width: 5%;
+    top: 4%;
+    left: 25%;
+    z-index: 6;
+    transform: scaleX(-1);
+  }
+
+  .bgTree3 {
+    background-image: url('../assets/img/common/RedTree1.png');
+    height: 16%;
+    width: 8%;
+    top: 0%;
+    left: 21%;
+    z-index: 6;
+    transform: scaleX(-1);
+  }
+
+  .bgTree4 {
+    background-image: url('../assets/img/common/RedTree2.png');
+    height: 25%;
+    width: 5%;
+    top: 23%;
+    right: 0%;
+    z-index: 6;
+  }
+
+  .bgTree5 {
+    background-image: url('../assets/img/common/RedTree3.png');
+    height: 15%;
+    width: 5%;
+    top: 18%;
+    left: 45%;
+    z-index: 6;
+  }
+
+  .bgTree6 {
+    background-image: url('../assets/img/common/RedTree4.png');
+    height: 15%;
+    width: 5%;
+    top: 0%;
+    left: 12%;
+    z-index: 6;
+    transform: scaleX(-1);
+  }
+
+  .bgTree7 {
+    background-image: url('../assets/img/common/GreenTree1.png');
+    height: 12%;
+    width: 5%;
+    top: 23%;
+    right: 2%;
+    z-index: 6;
+  }
+
+  .ground {
+    background-image: url('../assets/img/page24/ground.png');
+    width: 101%;
+    bottom: 15%;
+    left: 0;
+    height: 101%;
+    z-index: 15;
+    top: 0;
+  }
+
+  .rocksheep {
+    background-image: url('../assets/img/page24/rocksheep.png');
+    width: 100%;
+    height: 100%;
+
+    &-container {
+      width: 20%;
+      top: 40%;
+      right: 3%;
+      height: 40%;
+      z-index: 15;
+    }
+
+  }
+
+  .tree {
+    background-image: url('../assets/img/page24/tree.png');
+    width: 74%;
+    top: 0;
+    right: -1%;
+    height: 87%;
+    z-index: 20;
+    pointer-events: none;
+  }
+
+  .fence {
+    background-image: url('../assets/img/page24/fence.png');
+    width: 97%;
+    top: 8%;
+    right: -.8%;
+    height: 88%;
+    z-index: 25;
+    pointer-events: none;
+  }
+
+  .foliage {
+    background-image: url('../assets/img/page24/foliage1.png');
+    width: 27%;
+    top: 66.5%;
+    right: 9%;
+    height: 19%;
+    z-index: 28;
+  }
+
+  .grass1 {
+    background-image: url('../assets/img/page24/grass1.png');
+    width: 3%;
+    top: 63%;
+    right: 48%;
+    height: 12%;
+    z-index: 30;
+  }
+  .grass2 {
+    background-image: url('../assets/img/page24/grass2.png');
+    width: 5%;
+    top: 60%;
+    right: 40%;
+    height: 18%;
+    z-index: 30;
+  }
+  .grass3 {
+    background-image: url('../assets/img/page24/grass3.png');
+    width: 12%;
+    top: 62%;
+    right: 28%;
+    height: 20%;
+    z-index: 30;
+  }
+  .grass4 {
+    background-image: url('../assets/img/page24/grass4.png');
+    width: 4%;
+    top: 73%;
+    right: 27%;
+    height: 10%;
+    z-index: 30;
+  }
+  .grass5 {
+    background-image: url('../assets/img/page24/grass5.png');
+    width: 10%;
+    top: 67%;
+    right: 15%;
+    height: 18%;
+    z-index: 30;
+  }
+  .grass6 {
+    background-image: url('../assets/img/page24/grass6.png');
+    width: 4%;
+    top: 72%;
+    right: 7%;
+    height: 15%;
+    z-index: 30;
+  }
+  .grass7 {
+    background-image: url('../assets/img/page24/grass7.png');
+    width: 7%;
+    top: 70%;
+    right: 0;
+    height: 20%;
+    z-index: 30;
+  }
+
+  .swim-sheep {
+    //background-image: url('../assets/img/page24/swim-sheep.png');
+
+    &-container {
+      //background-image: url('../assets/img/page24/swim-sheep.png');
+      width: 21%;
+      top: 50%;
+      left: 10%;
+      height: 20%;
+      z-index: 30;
+      transform-origin: 35% 60%;
+    }
+
+    &-container2 {
+      //background-image: url('../assets/img/page24/swim-sheep.png');
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 30;
+    }
+
+    &-head {
+      background-image: url('../assets/img/page24/swim-sheep-head.png');
+      height: 100%;
+      width: 55%;
+      z-index: 5;
+      transform-origin: 10% 45%;
+      transform: rotate(70deg);
+      top: 25%;
+      left: 37%;
+
+    }
+    &-back {
+      background-image: url('../assets/img/page24/swim-sheep-back.png');
+      height: 70%;
+      width: 43%;
+      z-index: 2;
+      transform-origin: bottom left;
+      transform: rotate(30deg);
+      top: 20%;
+    }
+    &-cover {
+      background-image: url('../assets/img/page24/swim-sheep-cover.png');
+      top: 62%;
+      left: 0%;
+      height: 23%;
+      width: 43%;
+      z-index: 31;
+      background-size: contain;
+      pointer-events: none;
+    }
+
+  }
+
+  .dot {
+    position: absolute;
+    background-color: #5889BF;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+
+    + .large {
+      width: 7px;
+      height: 7px;
+    }
+
+    + .medium {
+      width: 5px;
+      height: 5px;
+    }
+
+    + .small {
+      width: 3px;
+      height: 3px;
+    }
+
+    &-container {
+      width: 33%;
+      top: 65%;
+      left: 40%;
+      height: 29%;
+      z-index: 290;
+    }
+
+  }
+
+  .croc-sheep {
+
+    &-container {
+
+      //background-image: url('../assets/img/page24/croc-sheep.png');
+
+      width: 33%;
+      top: 64%;
+      left: 36%;
+      height: 29%;
+      z-index: 300;
+
+    }
+
+    &-head {
+      background-image: url('../assets/img/page24/croc-sheep-head.png');
+      width: 100%;
+      height: 100%;
+      z-index: 55;
+      transform-origin: 86% 70%;
+
+      &-container {
+        left: 20%;
+        width: 68%;
+        height: 40%;
+        transform-origin: 86% 70%;
+        z-index: 55;
+      }
+
+    }
+
+    &-hat-mouth {
+      background-image: url('../assets/img/page24/croc-sheep-hat-mouth.png');
+      width: 51%;
+      height: 55%;
+      left: 16%;
+      transform-origin: 95% 15%;
+      z-index: 54;
+      top: 42%;
+    }
+
+    &-eye-left {
+      background-image: url('../assets/img/page24/croc-sheep-hat-eye.png');
+      width: 8%;
+      height: 21%;
+      left: 82%;
+      top: 10%;
+      z-index: 58;
+    }
+    &-eye-right {
+      background-image: url('../assets/img/page24/croc-sheep-hat-eye.png');
+      width: 12%;
+      height: 25%;
+      left: 67%;
+      top: -6%;
+      transform: scaleX(-1);
+      z-index: 58;
+    }
+
+    &-body {
+      background-image: url('../assets/img/page24/croc-sheep-body.png');
+      width: 62%;
+      height: 72%;
+      top: 20%;
+      left: 31%;
+      z-index: 25;
+    }
+
+    &-arm-left,
+    &-arm-right,
+    &-foot-left,
+    &-foot-right {
+      background-image: url('../assets/img/page24/croc-sheep-arm.png');
+    }
+
+    &-arm-left {
+      width: 14%;
+      height: 15%;
+      left: 87%;
+      z-index: 50;
+      top: 26%;
+      transform-origin: 5% 75%;
+    }
+    &-arm-right {
+      width: 14%;
+      height: 11%;
+      left: 65%;
+      z-index: 10;
+      top: 26%;
+      transform: scaleX(-1);
+      transform-origin: 5% 75%;
+    }
+    &-foot-left {
+      width: 14%;
+      height: 11%;
+      left: 60%;
+      z-index: 55;
+      top: 66%;
+      transform: scaleX(-1) scaleY(-1) rotate(-18deg);
+      transform-origin: 5% 75%;
+    }
+    &-foot-right {
+      width: 14%;
+      height: 11%;
+      left: 39%;
+      z-index: 10;
+      top: 60%;
+      transform: scaleX(-1) scaleY(-1);
+      transform-origin: 5% 75%;
+    }
+
+    &-tail {
+      background-image: url('../assets/img/page24/croc-sheep-tail.png');
+      width: 41%;
+      height: 24%;
+      bottom: 1%;
+      left: 1%;
+      transform-origin: 90% 15%;
+      z-index: 55;
+    }
+
+  }
+
+  .hotdog-sheep {
+    background-image: url('../assets/img/page24/hotdog-sheep.png');
+
+    height: 100%;
+    width: 100%;
+
+    &-container {
+      width: 26%;
+      top: 24%;
+      left: 40%;
+      height: 29%;
+      z-index: 30;
+    }
+
+  }
+
+  .squirrel-sheep {
+
+    //background-image: url('../assets/img/page24/squirrel-sheep.png');
+
+    &-body {
+      background-image: url('../assets/img/page24/squirrel-sheep-body.png');
+      height: 100%;
+      width: 100%;
+      z-index: 2;
+    }
+    &-tail {
+      background-image: url('../assets/img/page24/squirrel-sheep-tail.png');
+      height: 100%;
+      width: 46%;
+      z-index: 1;
+      right: 0%;
+      top: 4%;
+      transform-origin: left center;
+    }
+    &-acorn {
+      background-image: url('../assets/img/page24/squirrel-sheep-nut.png');
+      height: 26%;
+      width: 30%;
+      z-index: 3;
+      top: 40%;
+      left: 10%;
+    }
+
+    &-container {
+      width: 25%;
+      top: 5%;
+      right: 8%;
+      height: 35%;
+      z-index: 30;
+    }
+
+  }
+
+  .ballerina-sheep {
+    background-image: url('../assets/img/page24/ballerina-sheep.png');
+    width: 100%;
+    height: 100%;
+    transform-origin: 26% 25%;
+    backface-visibility: visible;
+
+
+
+    &-container {
+      width: 24%;
+      top: 11%;
+      left: 11.5%;
+      height: 26%;
+      z-index: 30;
+
+    }
+
+  }
+
+  .sheep10 {
+    background-image: url('../assets/img/common/Sheep5.png');
+  }
+  .sheep6, .sheep7, .sheep8, .sheep9 {
+    background-image: url('../assets/img/common/Sheep4.png');
+  }
+  .sheep11, .sheep12 {
+    background-image: url('../assets/img/common/Sheep3.png');
+  }
+
+  .sheep4 {
+    height: 14%;
+    width: 13%;
+    top: 36%;
+    left: 85%;
+    z-index: 18;
+    transform: scaleX(-1);
+  }
+  .sheep5 {
+    height: 8%;
+    width: 10%;
+    top: 28%;
+    left: 62%;
+    z-index: 18;
+  }
+
+  .sheep6 {
+    height: 8%;
+    width: 7%;
+    top: 30%;
+    right: -1%;
+    z-index: 18;
+  }
+  .sheep7 {
+    height: 9%;
+    width: 8%;
+    top: 22%;
+    left: 40%;
+    z-index: 18;
+  }
+  .sheep8 {
+    height: 3%;
+    width: 3%;
+    top: 26%;
+    left: 56%;
+    z-index: 18;
+    transform: scaleX(-1);
+  }
+  .sheep9 {
+    height: 9%;
+    width: 8%;
+    top: 22%;
+    left: 40%;
+    z-index: 18;
+  }
+  .sheep10 {
+    height: 9%;
+    width: 8%;
+    top: 17%;
+    left: 29%;
+    z-index: 18;
+  }
+  .sheep11 {
+    height: 7%;
+    width: 4%;
+    top: 13%;
+    left: 26%;
+    z-index: 18;
+  }
+  .sheep12 {
+    height: 8%;
+    width: 7%;
+    top: 8%;
+    left: 15%;
+    z-index: 25;
+  }
+}

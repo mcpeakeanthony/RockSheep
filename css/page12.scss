@@ -1,0 +1,299 @@
+.page-12 {
+
+  .sky {
+    background-image: url('../assets/img/page2/Sky.jpg');
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 0;
+    background-size: cover;
+  }
+
+  .sun {
+    width: 20%;
+    top: 5%;
+    left: 63%;
+    height: 42%;
+    z-index: 5;
+  }
+
+  .cloud1 {
+    width: 8%;
+    top: 10%;
+    left: 50%;
+    height: 42%;
+  }
+
+  .cloud2 {
+    width: 12%;
+    top: 7%;
+    left: 0;
+    height: 10%;
+  }
+
+  .bgTree1 {
+    background-image: url('../assets/img/common/GreenTree1.png');
+    height: 15%;
+    width: 5%;
+    top: 2%;
+    left: 20%;
+    z-index: 6;
+    transform: scaleX(-1);
+  }
+
+  .bgTree2 {
+    background-image: url('../assets/img/common/GreenTree2.png');
+    height: 15%;
+    width: 5%;
+    top: 4%;
+    left: 25%;
+    z-index: 6;
+    transform: scaleX(-1);
+  }
+
+  .bgTree3 {
+    background-image: url('../assets/img/common/RedTree1.png');
+    height: 16%;
+    width: 8%;
+    top: 0%;
+    left: 21%;
+    z-index: 6;
+    transform: scaleX(-1);
+  }
+
+  .bgTree4 {
+    background-image: url('../assets/img/common/RedTree2.png');
+    height: 25%;
+    width: 5%;
+    top: 23%;
+    right: 0%;
+    z-index: 6;
+  }
+
+  .bgTree5 {
+    background-image: url('../assets/img/common/RedTree3.png');
+    height: 15%;
+    width: 5%;
+    top: 18%;
+    left: 45%;
+    z-index: 6;
+  }
+
+  .bgTree6 {
+    background-image: url('../assets/img/common/RedTree4.png');
+    height: 15%;
+    width: 5%;
+    top: 0%;
+    left: 12%;
+    z-index: 6;
+    transform: scaleX(-1);
+  }
+
+  .bgTree7 {
+    background-image: url('../assets/img/common/GreenTree1.png');
+    height: 12%;
+    width: 5%;
+    top: 23%;
+    right: 2%;
+    z-index: 6;
+  }
+
+  .ground {
+    background-image: url('../assets/img/page2/ground.png');
+    width: 101%;
+    bottom: 15%;
+    left: 0;
+    height: 101%;
+    z-index: 15;
+    top: 0;
+  }
+
+  .tree {
+    background-image: url('../assets/img/page2/tree.png');
+    width: 74%;
+    top: 0;
+    right: -1%;
+    height: 87%;
+    z-index: 20;
+  }
+
+  .fence {
+    background-image: url('../assets/img/page2/fence.png');
+    width: 97%;
+    top: 8%;
+    right: -.8%;
+    height: 88%;
+    z-index: 25;
+  }
+
+  .foliage {
+    background-image: url('../assets/img/page2/foliage1.png');
+    width: 27%;
+    top: 66.5%;
+    right: 9%;
+    height: 19%;
+    z-index: 28;
+  }
+
+  .grass1 {
+    background-image: url('../assets/img/page2/grass1.png');
+    width: 3%;
+    top: 63%;
+    right: 48%;
+    height: 12%;
+    z-index: 30;
+  }
+  .grass2 {
+    background-image: url('../assets/img/page2/grass2.png');
+    width: 5%;
+    top: 60%;
+    right: 40%;
+    height: 18%;
+    z-index: 30;
+  }
+  .grass3 {
+    background-image: url('../assets/img/page2/grass3.png');
+    width: 12%;
+    top: 62%;
+    right: 28%;
+    height: 20%;
+    z-index: 30;
+  }
+  .grass4 {
+    background-image: url('../assets/img/page2/grass4.png');
+    width: 4%;
+    top: 73%;
+    right: 27%;
+    height: 10%;
+    z-index: 30;
+  }
+  .grass5 {
+    background-image: url('../assets/img/page2/grass5.png');
+    width: 10%;
+    top: 67%;
+    right: 15%;
+    height: 18%;
+    z-index: 30;
+  }
+  .grass6 {
+    background-image: url('../assets/img/page2/grass6.png');
+    width: 4%;
+    top: 72%;
+    right: 7%;
+    height: 15%;
+    z-index: 30;
+  }
+  .grass7 {
+    background-image: url('../assets/img/page2/grass7.png');
+    width: 7%;
+    top: 70%;
+    right: 0;
+    height: 20%;
+    z-index: 30;
+  }
+
+  .sheep1 {
+    background-image: url('../assets/img/page12/Sheep_1.png');
+    width: 24%;
+    top: 13%;
+    left: 40%;
+    height: 38%;
+    z-index: 50;
+  }
+  .sheep2 {
+    background-image: url('../assets/img/page12/Sheep_2.png');
+    width: 28%;
+    top: 48%;
+    left: 29%;
+    height: 44%;
+    z-index: 30;
+  }
+  .sheep3 {
+    background-image: url('../assets/img/page12/Sheep_3.png');
+    width: 29%;
+    top: 32%;
+    left: 2%;
+    height: 37%;
+    z-index: 25;
+  }
+
+  .sheep4 {
+    background-image: url('../assets/img/Page12/Sheep_4.png');
+    height: 36%;
+    width: 35%;
+    top: 7%;
+    left: 9%;
+    z-index: 18;
+  }
+
+  .sheep5, .sheep10 {
+    background-image: url('../assets/img/common/Sheep5.png');
+  }
+  .sheep6, .sheep7, .sheep8, .sheep9 {
+    background-image: url('../assets/img/common/Sheep4.png');
+  }
+  .sheep11, .sheep12 {
+    background-image: url('../assets/img/common/Sheep3.png');
+  }
+
+  .sheep5 {
+    height: 8%;
+    width: 10%;
+    top: 28%;
+    left: 62%;
+    z-index: 18;
+  }
+
+  .sheep6 {
+    height: 8%;
+    width: 7%;
+    top: 30%;
+    right: -1%;
+    z-index: 15;
+  }
+  .sheep7 {
+    height: 9%;
+    width: 8%;
+    top: 26%;
+    left: 65%;
+    z-index: 15;
+  }
+  .sheep8 {
+    height: 3%;
+    width: 3%;
+    top: 26%;
+    left: 56%;
+    z-index: 15;
+    transform: scaleX(-1);
+  }
+  .sheep9 {
+    height: 9%;
+    width: 8%;
+    top: 22%;
+    left: 40%;
+    z-index: 15;
+  }
+  .sheep10 {
+    height: 9%;
+    width: 8%;
+    top: 17%;
+    left: 29%;
+    z-index: 15;
+  }
+  .sheep11 {
+    height: 7%;
+    width: 4%;
+    top: 13%;
+    left: 26%;
+    z-index: 15;
+  }
+  .sheep12 {
+    height: 8%;
+    width: 7%;
+    top: 8%;
+    left: 15%;
+    z-index: 15;
+  }
+
+}

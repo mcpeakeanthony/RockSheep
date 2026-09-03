@@ -1,0 +1,44 @@
+.page-10 {
+
+  .content {
+    background: linear-gradient(to bottom, #efe140 0%, #fca728 100%);
+  }
+
+  .picture1 {
+    background-image: url('../assets/img/page10/Picture_1.png');
+
+    width: 60%;
+    top: 1%;
+    left: 39%;
+    height: 86%;
+    z-index: 50;
+  }
+  .picture2 {
+    background-image: url('../assets/img/page10/Picture_2.png');
+
+    width: 52%;
+    top: 0%;
+    left: 1%;
+    height: 79%;
+    z-index: 40;
+  }
+  .picture3 {
+    background-image: url('../assets/img/page10/Picture_3.png');
+
+    width: 53%;
+    top: 2%;
+    left: 45%;
+    height: 83%;
+    z-index: 30;
+  }
+  .picture4 {
+    background-image: url('../assets/img/page10/Picture_4.png');
+
+    width: 52%;
+    top: 10%;
+    left: 6%;
+    height: 85%;
+    z-index: 20;
+  }
+
+}

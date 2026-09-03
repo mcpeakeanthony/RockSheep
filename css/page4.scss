@@ -1,0 +1,177 @@
+.page-4 {
+
+  .content {
+    background: linear-gradient(to bottom, #3eaec2 0%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  }
+
+  .sun {
+    width: 32%;
+    top: -5%;
+    left: -5%;
+    height: 42%;
+    z-index: 5;
+  }
+
+  .rocksheep {
+    background-image: url('../assets/img/page4/rocksheep.png');
+    width: 100%;
+    height: 100%;
+
+    &-container{
+      width: 37%;
+      top: 7%;
+      left: 14%;
+      height: 65%;
+      z-index: 400;
+    }
+
+  }
+
+  .sheep1-container {
+    width: 11%;
+    top: 80%;
+    left: 10%;
+    height: 20%;
+    z-index: 200;
+    transform-origin: 50% 100%;
+  }
+
+  .sheep1 {
+    background-image: url('../assets/img/page4/sheep1.png');
+    width: 100%;
+    height: 100%;
+  }
+
+  .sheep2-container {
+    width: 11%;
+    top: 53%;
+    right: -10%;
+    height: 20%;
+    z-index: 200;
+  }
+
+  .sheep2 {
+    background-image: url('../assets/img/page4/sheep2.png');
+    width: 100%;
+    height: 100%;
+  }
+  .hill1 {
+    background-image: url('../assets/img/page4/hill1.png');
+    width: 80%;
+    top: 67%;
+    right: 10%;
+    height: 25%;
+    z-index: 190;
+    pointer-events: none;
+  }
+  .hill2 {
+    background-image: url('../assets/img/page4/hill2.png');
+    width: 75%;
+    top: 71%;
+    right: 0;
+    height: 30%;
+    z-index: 195;
+    pointer-events: none;
+
+  }
+  .fence1 {
+    background-image: url('../assets/img/page4/fence1.png');
+    width: 30%;
+    top: 63%;
+    right: 16%;
+    height: 16%;
+    z-index: 193;
+    pointer-events: none;
+  }
+  .fence2 {
+    background-image: url('../assets/img/page4/fence2.png');
+    width: 20%;
+    top: 63%;
+    right: 0;
+    height: 27%;
+    z-index: 170;
+    pointer-events: none;
+  }
+
+  .tree {
+
+    background-image: url('../assets/img/page4/tree.png');
+    width: 56%;
+    top: 4%;
+    right: 5%;
+    height: 90%;
+    z-index: 200;
+    pointer-events: none;
+  }
+  .rock {
+    background-image: url('../assets/img/page4/rock.png');
+    width: 90%;
+    top: 58%;
+    left: 0%;
+    height: 43%;
+    z-index: 450;
+    pointer-events: none;
+  }
+
+  .grass1 {
+    background-image: url('../assets/img/page4/grass1.png');
+    width: 11%;
+    top: 76%;
+    right: -1%;
+    height: 25%;
+    z-index: 500;
+  }
+  .grass2 {
+    background-image: url('../assets/img/page4/grass2.png');
+    width: 12%;
+    top: 74%;
+    right: 13%;
+    height: 20%;
+    z-index: 400;
+  }
+  .grass3 {
+    background-image: url('../assets/img/page4/grass3.png');
+    width: 4%;
+    top: 87%;
+    right: 25%;
+    height: 6%;
+    z-index: 400;
+  }
+  .grass4 {
+    background-image: url('../assets/img/page4/grass4.png');
+    width: 6%;
+    top: 82%;
+    right: 30%;
+    height: 10%;
+    z-index: 400;
+  }
+  .grass5, .grass6 {
+    background-image: url('../assets/img/page4/grass5.png');
+    width: 12%;
+    top: 70%;
+    right: 2%;
+    height: 34%;
+    z-index: 450;
+  }
+
+  .grass6 {
+    width: 11%;
+    top: 62%;
+    right: -3%;
+    height: 40%;
+    z-index: 399;
+    transform: scaleX(-1);
+  }
+
+  .cloud-section{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:75%;
+    pointer-events: none;
+  }
+
+
+}

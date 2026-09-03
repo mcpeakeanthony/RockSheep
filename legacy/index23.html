@@ -1,0 +1,200 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="google" value="notranslate">
+
+
+    <title>Rocksheep</title>
+
+
+    <style>
+        body {
+            /*font-family: 'Swanky and Moo Moo', cursive;*/
+            font-family: 'Swanky and Moo Moo', helvetica, arial, sans-serif;
+            color: white;
+            background: green;
+            margin: 3% 10% 0 10%;
+            overflow: hidden;
+        }
+
+        .storypoint {
+            font-size: 44px;
+            line-height: 50px;
+            color: #dedede;
+        }
+
+        button {
+            padding: 10px;
+            margin: 20px 0;
+        }
+
+        .highlight {
+            color: yellow;
+            font-size: 1.1em;
+
+            z-index: 10;
+
+            /* If we weren't using text-shadow, we'd set a fallback color
+               and use this to set color instead
+              -webkit-text-fill-color: white; */
+
+            text-shadow: 3px 3px 0 #000,
+                /* Simulated effect for Firefox and Opera
+                   and nice enhancement for WebKit */ -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+        }
+
+
+    </style>
+    <link href='http://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+<body>
+
+
+<div style="position:relative;">
+    <div id="a" class="storypoint">There once was a field,</div>
+    <div id="b" class="storypoint">and in it some sheep.</div>
+    <div id="c" class="storypoint">They wore big wooly jumpers,</div>
+    <div id="d" class="storypoint">and had little black feet.</div>
+</div>
+<button id="animate">animate</button>
+
+<script src="./js/jquery-2.1.4.min.js"></script>
+<script src="./js/greensock/utils/SplitText.min.js"></script>
+<script src="./js/greensock/TweenMax.min.js"></script>
+
+<script>
+
+    $(function () {
+        var tl = new TimelineMax(),
+            mySplitText = new SplitText('#a,#b,#c,#d', {
+                type: 'chars,words',
+                wordsClass: "word++",
+                position: "absolute"
+            }),
+            chars = mySplitText.chars;
+
+        TweenMax.set('#a', {perspective: 400});
+
+        tl.staggerFrom(chars, 0.5, {
+            opacity: 0,
+            scale: 0,
+            y: 80,
+            rotationX: 180,
+            transformOrigin: '0% 50% -50',
+            ease: Back.easeOut
+        }, 0.01, '+=0')
+            .to($('#a .word1'), .5, {
+                css: {className: "+=highlight"}, ease: Power2.easeOut, onComplete: function () {
+                    $('#a .word1').removeClass('highlight')
+                }
+            })
+            .to($('#a .word2'), .5, {
+                css: {className: "+=highlight"}, ease: Power2.easeOut, onComplete: function () {
+                    $('#a .word2').removeClass('highlight')
+                }
+            })
+            .to($('#a .word3'), .5, {
+                css: {className: "+=highlight"}, ease: Power2.easeOut, onComplete: function () {
+                    $('#a .word3').removeClass('highlight')
+                }
+            })
+            .to($('#a .word4'), .5, {
+                css: {className: "+=highlight"}, ease: Power2.easeOut, onComplete: function () {
+                    $('#a .word4').removeClass('highlight')
+                }
+            })
+            .to($('#a .word5'), .5, {
+                css: {className: "+=highlight"}, ease: Power2.easeOut, onComplete: function () {
+                    $('#a .word5').removeClass('highlight')
+                }
+            })
+            .to($('#b .word1'), .5, {
+                css: {className: "+=highlight"}, ease: Power2.easeOut, onComplete: function () {
+                    $('#b .word1').removeClass('highlight')
+                }
+            })
+            .to($('#b .word2'), .5, {
+                css: {className: "+=highlight"}, ease: Power2.easeOut, onComplete: function () {
+                    $('#b .word2').removeClass('highlight')
+                }
+            })
+            .to($('#b .word3'), .5, {
+                css: {className: "+=highlight"}, ease: Power2.easeOut, onComplete: function () {
+                    $('#b .word3').removeClass('highlight')
+                }
+            })
+            .to($('#b .word4'), .5, {
+                css: {className: "+=highlight"}, ease: Power2.easeOut, onComplete: function () {
+                    $('#b .word4').removeClass('highlight')
+                }
+            })
+            .to($('#b .word5'), .5, {
+                css: {className: "+=highlight"}, ease: Power2.easeOut, onComplete: function () {
+                    $('#b .word5').removeClass('highlight')
+                }
+            })
+            .to($('#c .word1'), .5, {
+                css: {className: "+=highlight"}, ease: Power2.easeOut, onComplete: function () {
+                    $('#c .word1').removeClass('highlight')
+                }
+            })
+            .to($('#c .word2'), .5, {
+                css: {className: "+=highlight"}, ease: Power2.easeOut, onComplete: function () {
+                    $('#c .word2').removeClass('highlight')
+                }
+            })
+            .to($('#c .word3'), .5, {
+                css: {className: "+=highlight"}, ease: Power2.easeOut, onComplete: function () {
+                    $('#c .word3').removeClass('highlight')
+                }
+            })
+            .to($('#c .word4'), .5, {
+                css: {className: "+=highlight"}, ease: Power2.easeOut, onComplete: function () {
+                    $('#c .word4').removeClass('highlight')
+                }
+            })
+            .to($('#c .word5'), .5, {
+                css: {className: "+=highlight"}, ease: Power2.easeOut, onComplete: function () {
+                    $('#c .word5').removeClass('highlight')
+                }
+            })
+            .to($('#d .word1'), .5, {
+                css: {className: "+=highlight"}, ease: Power2.easeOut, onComplete: function () {
+                    $('#d .word1').removeClass('highlight')
+                }
+            })
+            .to($('#d .word2'), .5, {
+                css: {className: "+=highlight"}, ease: Power2.easeOut, onComplete: function () {
+                    $('#d .word2').removeClass('highlight')
+                }
+            })
+            .to($('#d .word3'), .5, {
+                css: {className: "+=highlight"}, ease: Power2.easeOut, onComplete: function () {
+                    $('#d .word3').removeClass('highlight')
+                }
+            })
+            .to($('#d .word4'), .5, {
+                css: {className: "+=highlight"}, ease: Power2.easeOut, onComplete: function () {
+                    $('#d .word4').removeClass('highlight')
+                }
+            })
+            .to($('#d .word5'), .5, {
+                css: {className: "+=highlight"}, ease: Power2.easeOut, onComplete: function () {
+                    $('#d .word5').removeClass('highlight')
+                }
+            })
+
+
+    });
+
+
+</script>
+
+</body>
+</html>

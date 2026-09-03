@@ -1,0 +1,114 @@
+.page-7 {
+
+  .content {
+    background: linear-gradient(to bottom, #3eaec2 0%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  }
+
+  .sheep {
+
+    &-container {
+      width: 38%;
+      top: 18%;
+      left: 53%;
+      height: 44%;
+      z-index: 5;
+
+      .sheep1 {
+        background-image: url('../assets/img/page7/sheep1.png');
+        width: 63%;
+        height: 70%;
+        bottom: 0;
+        right: 0;
+        z-index: 3;
+      }
+      .sheep2 {
+        background-image: url('../assets/img/page7/sheep2.png');
+        width: 63%;
+        height: 70%;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+      }
+      .sheep3 {
+        background-image: url('../assets/img/page7/sheep3.png');
+        width: 63%;
+        height: 70%;
+        top: 0;
+        left: 10%;
+        z-index: 2;
+      }
+    }
+  }
+
+  .tree1 {
+    background-image: url('../assets/img/page7/tree1.png');
+    width: 83%;
+    height: 87%;
+    top: 0px;
+    left: -8%;
+    z-index: 8;
+    pointer-events: none;
+  }
+
+  .cloud-section {
+    height: 20%;
+  }
+
+  .background {
+    background-image: url('../assets/img/page7/background.png');
+    width: 105%;
+    top: 10%;
+    left: -2%;
+    height: 33%;
+    z-index: 40;
+  }
+
+  .sheep4 {
+    background-image: url('../assets/img/common/Sheep4.png');
+    height: 10%;
+    width: 8%;
+    top: 32%;
+    left: 2%;
+    z-index: 45;
+  }
+
+  .sheep5 {
+    background-image: url('../assets/img/common/Sheep5.png');
+    height: 10%;
+    width: 8%;
+    top: 34%;
+    right: 4%;
+    z-index: 45;
+    transform: scaleX(-1);
+  }
+
+  .foreground {
+    background-image: url('../assets/img/page7/foreground.png');
+    width: 110%;
+    top: 30%;
+    left: -5%;
+    height: 70%;
+    z-index: 50;
+  }
+
+  .sun {
+    top: -5%;
+    left: 73%;
+    height: 33%;
+    z-index: 5;
+    position: absolute;
+  }
+
+  .rocksheep {
+    background-image: url('../assets/img/page7/rocksheep.png');
+    width: 38%;
+    top: 16%;
+    left: 4%;
+    height: 67%;
+    z-index: 80;
+    pointer-events: none;
+  }
+
+
+
+}

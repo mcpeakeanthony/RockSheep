@@ -1,0 +1,58 @@
+.page-25 {
+
+  .sentence-1 {
+
+    //position: fixed;
+    ///* center the element */
+    //right: 0;
+    //left: 0;
+    //margin-right: auto;
+    //margin-left: auto;
+    //width: 20vh;
+    //text-align: center;
+    //top: 70%;
+
+    margin: auto;
+    position: absolute;
+    top: 75%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 20vh;
+    text-align: center;
+    height: 5vh;
+  }
+
+  .content {
+    background: #FFF;
+  }
+
+  .circle-container {
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 40vh;
+    width: 40vh;
+
+    transform-origin: 50% 50%;
+    z-index: 100000;
+
+  }
+
+  .circle {
+    background-image: url(../assets/img/page25/circle.png);
+    width: 100%;
+    height: 100%;
+    backface-visibility: visible;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+
+

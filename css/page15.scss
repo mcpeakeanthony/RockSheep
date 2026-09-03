@@ -1,0 +1,101 @@
+.page-15 {
+
+  .content {
+    background: linear-gradient(to bottom, #3f4c6b 0%, #7673c4 100%);
+  }
+
+  .moon {
+    background-image: url('../assets/img/page15/Moon.png');
+    width: 16%;
+    top: 0%;
+    left: 22%;
+    height: 23%;
+    z-index: 10;
+
+  }
+
+  .sky {
+    background-image: url('../assets/img/page15/Sky.png');
+    width: 80%;
+    top: 0%;
+    left: 0;
+    height: 65%;
+    z-index: 10;
+  }
+
+  .tree1 {
+    background-image: url('../assets/img/page15/Tree1.png');
+
+    width: 15%;
+    top: 27%;
+    left: 73%;
+    height: 50%;
+    z-index: 100;
+
+  }
+  .tree2 {
+    background-image: url('../assets/img/page15/Tree2.png');
+
+    width: 25%;
+    top: 14%;
+    left: 43%;
+    height: 75%;
+    z-index: 110;
+
+  }
+  .tree3 {
+    background-image: url('../assets/img/page15/Tree3.png');
+
+    width: 20%;
+    top: 21%;
+    left: 9%;
+    height: 50%;
+    z-index: 120;
+
+  }
+
+  .sheep {
+    background-image: url('../assets/img/page15/Crowd_Of_Sheep.png');
+
+    width: 100%;
+    top: 32%;
+    left: 0;
+    height: 82%;
+    z-index: 200;
+
+  }
+
+  .stage {
+    background-image: url('../assets/img/page15/Stage_Light.png');
+
+    width: 75%;
+    bottom: 0;
+    left: 13%;
+    height: 28%;
+    z-index: 250;
+
+  }
+
+  .spotlight {
+    background-image: url('../assets/img/page15/Light.png');
+
+    width: 79%;
+    top: 12%;
+    left: 31%;
+    height: 75%;
+    z-index: 300;
+
+  }
+
+  .rocksheep {
+    background-image: url('../assets/img/page15/Rock_Sheep.png');
+
+    width: 31%;
+    top: 0;
+    right: -3%;
+    height: 100%;
+    z-index: 400;
+
+  }
+
+}

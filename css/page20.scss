@@ -1,0 +1,43 @@
+.page-20 {
+
+  .content {
+    background: linear-gradient(to bottom, #3f4c6b 0%, #7673c4 100%);
+  }
+
+  .sky {
+
+    background-image: url('../assets/img/page20/Sky.png');
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    z-index: 0;
+
+  }
+
+  .cloud1 {
+    width: 35%;
+    top: 0%;
+    left: 70%;
+    height: 20%;
+  }
+
+  .cloud2 {
+    width: 15%;
+    top: 10%;
+    left: 0;
+    height: 10%;
+  }
+
+  .rocksheep {
+    background-image: url('../assets/img/page20/Rock_sheep.png');
+    height: 98%;
+    width: 80%;
+    bottom: 0;
+    left: 7%;
+
+    z-index: 50;
+  }
+
+}

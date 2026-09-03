@@ -1,0 +1,142 @@
+.page-16 {
+
+  .content {
+    background: linear-gradient(to bottom, #3f4c6b 0%, #7673c4 100%);
+  }
+
+  .sky {
+    background-image: url('../assets/img/page16/Sky.png');
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+  }
+
+  .bubble1 {
+
+    &-container {
+      top: 5%;
+      left: 1%;
+      z-index: 100;
+      height: 45%;
+      width: 35%;
+    }
+
+    background-image: url('../assets/img/page16/Cloud.png');
+    height: 100%;
+    width: 100%;
+
+  }
+
+  .bubble2 {
+
+    &-container {
+      height: 45%;
+      width: 35%;
+      top: 4%;
+      right: 3%;
+      z-index: 100;
+    }
+
+    background-image: url('../assets/img/page16/Cloud.png');
+    height: 100%;
+    width: 100%;
+
+  }
+
+  .rocksheep {
+    background-image: url('../assets/img/page16/Rock_Sheep.png');
+    height: 90%;
+    width: 73%;
+    bottom: 0;
+    left: 14%;
+    z-index: 50;
+  }
+
+  .sheep_guitar1 {
+    background-image: url('../assets/img/page16/Sheep_Guitar.png');
+    height: 100%;
+    width: 100%;
+
+    &-container{
+      height: 15%;
+      width: 16%;
+      top: 11%;
+      right: 16%;
+      z-index: 200;
+    }
+
+  }
+
+  .sheep_guitar2 {
+    background-image: url('../assets/img/page16/Sheep_Guitar.png');
+    height: 100%;
+    width: 100%;
+
+    &-container{
+      height: 15%;
+      width: 16%;
+      top: 19%;
+      right: 3%;
+      z-index: 200;
+    }
+  }
+
+  .sheep_guitar3 {
+    background-image: url('../assets/img/page16/Sheep_Guitar.png');
+    height: 100%;
+    width: 100%;
+
+    &-container{
+      height: 15%;
+      width: 16%;
+      top: 30%;
+      right: 15%;
+      z-index: 200;
+    }
+  }
+
+  .sheep1 {
+    background-image: url('../assets/img/page16/Sheep.png');
+    height: 100%;
+    width: 100%;
+
+    &-container{
+      height: 15%;
+      width: 16%;
+      top: 11%;
+      left: 7%;
+      z-index: 200;
+    }
+  }
+
+  .sheep2 {
+    background-image: url('../assets/img/page16/Sheep.png');
+    height: 100%;
+    width: 100%;
+
+    &-container{
+      height: 15%;
+      width: 16%;
+      top: 19%;
+      left: 20%;
+      z-index: 200;
+    }
+  }
+
+  .sheep3 {
+    background-image: url('../assets/img/page16/Sheep.png');
+    height: 100%;
+    width: 100%;
+    &-container{
+      height: 15%;
+      width: 16%;
+      top: 30%;
+      left: 8%;
+      z-index: 200;
+
+    }
+  }
+
+}

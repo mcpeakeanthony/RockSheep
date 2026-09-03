@@ -1,0 +1,137 @@
+.page-19 {
+
+  .content {
+    background: linear-gradient(to bottom, #3f4c6b 0%, #7673c4 100%);
+  }
+
+  .sky {
+
+    background-image: url('../assets/img/page19/Sky.png');
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    z-index: 0;
+
+  }
+  .sun {
+
+    background-image: url('../assets/img/common/Sun.png');
+    height: 30%;
+    width: 30%;
+    top: 32%;
+    left: 65%;
+    z-index: 60;
+
+  }
+  .clouds {
+    background-image: url('../assets/img/page19/Clouds.png');
+    height: 34%;
+    width: 100%;
+    top: -2%;
+    left: 0;
+    background-size: cover;
+    z-index: 100;
+  }
+
+  .hill1 {
+    background-image: url('../assets/img/page19/hill1.png');
+    height: 80%;
+    width: 100%;
+    top: 19%;
+    left: 0;
+    background-size: cover;
+    z-index: 150;
+  }
+  .hill2 {
+    background-image: url('../assets/img/page19/hill2.png');
+    height: 35%;
+    width: 100%;
+    top: 21%;
+    left: 0;
+    z-index: 140;
+  }
+  .hill3 {
+    background-image: url('../assets/img/page19/hill3.png');
+    height: 34%;
+    width: 20%;
+    top: 34%;
+    left: 11%;
+    z-index: 130;
+  }
+
+  .tree1 {
+    //background-image: url('../assets/img/page19/Trees2.png');
+    //height: 18%;
+    //width: 10%;
+    //top: 32%;
+    //right: 0;
+    //z-index: 250;
+  }
+
+  .tree2 {
+    background-image: url('../assets/img/page19/Trees2.png');
+    height: 18%;
+    width: 10%;
+    top: 32%;
+    left: 0;
+    z-index: 250;
+  }
+
+  .tree2 {
+    //background-image: url('../assets/img/page19/Trees3.png');
+    //height: 45%;
+    //width: 22%;
+    //top: 53%;
+    //left: 0;
+    //z-index: 300;
+  }
+
+  .sheep {
+    background-image: url('../assets/img/page19/Sheep.png');
+    height: 45%;
+    width: 22%;
+    top: 53%;
+    left: 0;
+    z-index: 350;
+
+  }
+  .stage {
+    background-image: url('../assets/img/page19/Stage.png');
+    height: 53%;
+    width: 100%;
+    top: 50%;
+    left: 16%;
+    z-index: 400;
+
+  }
+  .light1 {
+    background-image: url('../assets/img/page19/Stage_Light_1.png');
+    height: 25%;
+    width: 20%;
+    top: 50%;
+    left: 84%;
+    z-index: 450;
+  }
+  .light2 {
+    background-image: url('../assets/img/page19/Stage_Light_2.png');
+    height: 34%;
+    width: 19%;
+    top: 42%;
+    left: 15%;
+    z-index: 450;
+  }
+
+  .rocksheep {
+
+    background-image: url('../assets/img/page19/Rock_Sheep.png');
+    height: 86%;
+    width: 76%;
+    top: 1%;
+    left: 19%;
+    z-index: 500;
+
+  }
+
+}

@@ -1,0 +1,63 @@
+.page-14 {
+
+  .sky {
+    background-image: url('../assets/img/page14/Sky.png');
+
+    width: 150%;
+    top: 0;
+    left: 0;
+    height: 150%;
+    z-index: 5;
+  }
+
+  .stars {
+    background-image: url('../assets/img/page14/Stars.png');
+
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 8;
+  }
+
+  .moon {
+    background-image: url('../assets/img/page14/Moon.png');
+
+    width: 29%;
+    top: 2%;
+    left: 12%;
+    height: 40%;
+    z-index: 10;
+  }
+
+  .clouds {
+    background-image: url('../assets/img/page14/Clouds.png');
+
+    width: 100%;
+    top: -2%;
+    left: 0;
+    height: 100%;
+    z-index: 20;
+  }
+
+  .sheep {
+    background-image: url('../assets/img/page14/Sheep.png');
+
+    width: 55%;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    z-index: 40;
+  }
+
+  .rocksheep {
+    background-image: url('../assets/img/page14/Sheep_Guitar.png');
+
+    width: 60%;
+    top: 0%;
+    right: 0;
+    height: 100%;
+    z-index: 50;
+  }
+
+}

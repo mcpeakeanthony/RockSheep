@@ -1,0 +1,56 @@
+.page-9 {
+
+  .grass {
+    background-image: url('../assets/img/page9/Grass_Background.png');
+
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 5;
+  }
+
+  .back_sheep {
+
+    background-image: url('../assets/img/page9/Back_Sheep.png');
+
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 10;
+
+  }
+
+  .vinyl {
+    background-image: url('../assets/img/page9/Vinyl.png');
+
+    width: 79%;
+    top: 35%;
+    left: 34%;
+    height: 40%;
+    z-index: 40;
+  }
+
+  .vinyl_cover {
+    background-image: url('../assets/img/page9/Vinyl_Cover_Rock_Sheep.png');
+
+    width: 66%;
+    top: 27%;
+    left: 18%;
+    height: 60%;
+    z-index: 50;
+  }
+
+  .front_sheep {
+    background-image: url('../assets/img/page9/Front_Sheep.png');
+
+    width: 105%;
+    top: 0;
+    left: 0;
+    height: 105%;
+    z-index: 60;
+    pointer-events: none;
+  }
+
+}

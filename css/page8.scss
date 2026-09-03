@@ -1,0 +1,167 @@
+.page-8 {
+
+  .content {
+    background: linear-gradient(to bottom, #3eaec2 0%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  }
+
+  .tree2 {
+    background-image: url('../assets/img/page8/Trees.png');
+    width: 21%;
+    top: 13%;
+    left: 0;
+    height: 16%;
+    z-index: 10;
+  }
+
+  .grass {
+    background-image: url('../assets/img/page8/Grass.png');
+    width: 102%;
+    top: 15%;
+    left: 0;
+    height: 102%;
+    z-index: 20;
+  }
+
+  .sheep1 {
+    background-image: url('../assets/img/page8/Sheep_1.png');
+    width: 13%;
+    top: 75%;
+    left: 5%;
+    height: 13%;
+    z-index: 50;
+
+  }
+
+  .sheep2 {
+    background-image: url('../assets/img/page8/Sheep_2.png');
+    width: 9%;
+    top: 49%;
+    left: 2%;
+    height: 15%;
+    z-index: 60;
+  }
+
+  .sheep3 {
+    background-image: url('../assets/img/page8/Sheep_3.png');
+    width: 13%;
+    top: 36%;
+    left: 0%;
+    height: 8%;
+    z-index: 70;
+  }
+
+  .sheep4 {
+    background-image: url('../assets/img/page8/Sheep_4.png');
+    width: 5%;
+    top: 26%;
+    left: 9%;
+    height: 8%;
+    z-index: 80;
+  }
+
+  .sheep5 {
+    background-image: url('../assets/img/page8/Sheep_5.png');
+    width: 4%;
+    top: 27%;
+    left: 2%;
+    height: 5%;
+    z-index: 90;
+  }
+
+  .tree1 {
+    background-image: url('../assets/img/page8/Tree.png');
+    width: 100%;
+    top: 0;
+    right: -7%;
+    height: 100%;
+    z-index: 120;
+    pointer-events: none;
+  }
+
+  .bird1 {
+    background-image: url('../assets/img/page8/Bird_01.png');
+    width: 23%;
+    top: 7%;
+    left: 91%;
+    height: 19%;
+    z-index: 150;
+
+  }
+
+  .bird2 {
+    background-image: url('../assets/img/page8/Bird_02.png');
+    width: 10%;
+    top: 7%;
+    left: 83%;
+    height: 19%;
+    z-index: 160;
+  }
+
+  .rocksheep {
+
+
+    &-body{
+      background-image: url('../assets/img/page8/Rock_Sheep.png');
+      width: 100%;
+      height: 100%;
+    }
+    &-guitar{
+      background-image: url('../assets/img/page8/guitar.png');
+      width: 84%;
+      height: 65%;
+      top: 30%;
+      left:1%;
+      transform-origin: 10% 20%;
+transform: rotate(-5deg);
+
+
+    }
+    &-body{}
+
+    &-container{
+      width: 47%;
+      top: 0%;
+      left: 16%;
+      height: 70%;
+      z-index: 200;
+    }
+  }
+
+  .amplifier {
+    background-image: url('../assets/img/page8/Amplifier.png');
+    width: 100%;
+    height: 100%;
+    transform-origin: 50% 85%;
+
+    &-container{
+      width: 23%;
+      top: 34%;
+      left: 74%;
+      height: 33%;
+      z-index: 300;
+      transform-origin: 50% 85%;
+    }
+
+  }
+
+  .music-emitter{
+    height: 10%;
+    width: 10%;
+    top: 45%;
+    right: 65%;
+    z-index: 300;
+
+  }
+
+  .musical-note{
+    position: absolute;
+    height: 200%;
+    width: 200%;
+    top: 45%;
+    right: 15%;
+    z-index: 400;
+opacity: 0;
+//    background-image: url('../assets/img/page8/musical-notes.svg');
+  }
+
+}

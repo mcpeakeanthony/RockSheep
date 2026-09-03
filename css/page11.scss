@@ -1,0 +1,116 @@
+.page-11 {
+
+  .content {
+    background: linear-gradient(to bottom, #3eaec2 0%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  }
+
+  //.sky {
+  //
+  //  background-image: url('../assets/img/page11/Sky.png') ;
+  //
+  //  width: 30%;
+  //  top: 4%;
+  //  left: 24%;
+  //  height: 25%;
+  //  z-index: 50;
+  //
+  //}
+
+  .clouds {
+
+    background-image: url('../assets/img/page11/Cloud.png');
+
+    width: 100%;
+    top: 0%;
+    left: 11%;
+    height: 6%;
+    z-index: 90;
+  }
+
+  .trees {
+
+    background-image: url('../assets/img/page11/Trees.png');
+
+    width: 100%;
+    top: -6%;
+    left: 0;
+    height: 25%;
+    z-index: 100;
+  }
+
+  .hills {
+
+    background-image: url('../assets/img/page11/Hills.png');
+
+    width: 100%;
+    top: 9%;
+    left: 0;
+    height: 20%;
+    z-index: 105;
+  }
+
+  .grass_background {
+
+    background-image: url('../assets/img/page11/Grass_Background.png');
+
+    width: 101%;
+    bottom: -20%;
+    left: 0;
+    height: 105%;
+    z-index: 110;
+  }
+
+  .tv {
+
+    background-image: url('../assets/img/page11/Tv.png');
+
+    width: 30%;
+    top: 4%;
+    left: 24%;
+    height: 25%;
+    z-index: 140;
+
+  }
+
+  .sheep3 {
+    background-image: url('../assets/img/page11/Sheep_3_Group.png');
+
+    width: 114%;
+    top: 5%;
+    left: -7%;
+    height: 111%;
+    z-index: 150;
+  }
+
+  .sheep1 {
+    background-image: url('../assets/img/page11/Sheep_1_Reading_Sheep_Life.png');
+
+    width: 53%;
+    top: 31%;
+    right: 0;
+    height: 85%;
+    z-index: 200;
+  }
+  .sheep2 {
+    background-image: url('../assets/img/page11/Sheep_2_Phone.png');
+
+    width: 55%;
+    top: 37%;
+    left: 0;
+    height: 65%;
+    z-index: 250;
+  }
+
+  .tweets {
+
+    background-image: url('../assets/img/page11/Bleep_Text.png');
+
+    width: 15%;
+    top: 50%;
+    left: 30%;
+    height: 15%;
+    z-index: 300;
+
+  }
+
+}

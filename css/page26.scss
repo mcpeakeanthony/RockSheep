@@ -1,0 +1,33 @@
+.page-26 {
+
+  .para1 {
+    top: 3%;
+    left: 3%;
+
+    position: fixed;
+    /* center the element */
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 35vh;
+    text-align: center;
+    top: 5%;
+  }
+
+  .content {
+    background: #FFF;
+  }
+
+  .face {
+    background-image: url('../assets/img/page26/');
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+
+  }
+
+}

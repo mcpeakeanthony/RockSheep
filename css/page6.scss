@@ -1,0 +1,123 @@
+.page-6 {
+
+  .content {
+    background: linear-gradient(to bottom, #3eaec2 0%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  }
+
+  .sun {
+    width: 25%;
+    top: -5%;
+    left: 0%;
+    height: 33%;
+    z-index: 5;
+  }
+
+  .background {
+    background-image: url('../assets/img/page6/background.png');
+    width: 100%;
+    top: 24%;
+    left: 0;
+    height: 29%;
+    z-index: 40;
+  }
+
+  .bg-trees {
+    background-image: url('../assets/img/page6/bg-trees.png');
+    width: 79%;
+    top: 24%;
+    left: 20%;
+    height: 24%;
+    z-index: 45;
+  }
+
+  .foreground {
+    background-image: url('../assets/img/page6/foreground.png');
+    width: 110%;
+    top: 42%;
+    left: -5%;
+    height: 65%;
+    z-index: 50;
+  }
+
+  .tree1 {
+    background-image: url('../assets/img/page6/tree1.png');
+    width: 13%;
+    top: 15%;
+    left: 1%;
+    height: 35%;
+    z-index: 60;
+  }
+
+  .sheep {
+
+
+
+    &-container{
+      width: 50%;
+      top: 12%;
+      left: 2%;
+      height: 60%;
+      z-index: 70;
+
+      .sheep1{
+        background-image: url('../assets/img/page6/sheep1.png');
+        width: 63%;
+        height: 70%;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+      }
+      .sheep2{
+        background-image: url('../assets/img/page6/sheep2.png');
+        width: 63%;
+        height: 58%;
+        bottom: 0;
+        right: 0;
+        z-index: 3;
+      }
+      .sheep3{
+        background-image: url('../assets/img/page6/sheep3.png');
+        width: 63%;
+        height: 70%;
+        top: 0;
+        left: 25%;
+        z-index: 2;
+      }
+
+    }
+
+
+  }
+
+
+
+
+  .rocksheep {
+    background-image: url('../assets/img/page6/rocksheep.png');
+    width: 45%;
+    top: 20%;
+    right: 0;
+    height: 70%;
+    z-index: 80;
+  }
+
+  .sentence-1 {
+    top: 3%;
+    left: 3%;
+
+    position: absolute;
+    /* center the element */
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60vh;
+    text-align: center;
+    top: 5%;
+
+    font-size: 8vh;
+
+  }
+
+}

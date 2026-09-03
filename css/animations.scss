@@ -1,0 +1,116 @@
+// scale up and down animation
+@keyframes pulse {
+  0% {
+    transform: scale(1.0);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0 0 6px #FFF);
+  }
+  50% {
+    filter: drop-shadow(0 0 10px yellow);
+  }
+  100% {
+    filter: drop-shadow(0 0 6px #FFF);
+  }
+}
+
+//rotate
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+//3d spin - like a coin
+@keyframes spinner {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+
+@keyframes colorchange
+{
+  0%   {background: red;}
+  25%  {background: yellow;}
+  50%  {background: blue;}
+  75%  {background: green;}
+  100% {background: red;}
+}
+
+//sleep - move zzzZZZZ's
+@keyframes sleep {
+  0% {
+    transform: translate(0, 0) scale(.5);
+    opacity: .3;
+
+  }
+
+  /* Finish changes by here */
+  50% {
+    transform: translate(25px, -25px) scale(.7);
+    opacity: 1;
+  }
+
+  /* Between 20px and 100px, nothing changes */
+  100% {
+    transform: translate(50px, -50px) scale(1);
+    opacity: 0;
+  }
+}
+
+.sleep-animation{
+  transition-timing-function: ease-in;
+  animation: sleep 2s 3;
+}
+
+//sleep - move zzzZZZZ's
+@keyframes sleepSkew {
+  0% {
+    transform: scaleY(1);
+  }
+
+  /* Finish changes by here */
+  50% {
+    transform: scaleY(1.05);
+  }
+
+  /* Between 20px and 100px, nothing changes */
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.js-sleep{
+  transition-timing-function: ease-in;
+  animation:  sleepSkew 4s linear 2s infinite alternate;
+}
+
+//sleep - move zzzZZZZ's
+@keyframes sparkle {
+  0% {
+    opacity: 0.1;
+  }
+
+  /* Finish changes by here */
+  50% {
+    opacity: 1;
+  }
+
+  /* Between 20px and 100px, nothing changes */
+  100% {
+    opacity: 0.1;
+  }
+}

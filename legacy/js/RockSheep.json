@@ -1,0 +1,1125 @@
+{
+  "pages": [
+    {
+      "id": 1,
+      "story": [
+        {
+          "word": "",
+          "timing": 0
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "story": [
+        {
+          "sentence": "There once was a field,",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-1"
+        },
+        {
+          "sentence": "and in it some sheep.",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-2"
+        },
+        {
+          "sentence": "They had big wooly jumpers,",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-3"
+        },
+        {
+          "sentence": "and little black feet.",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-4"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "story": [
+        {
+          "sentence": "They jumped over fences,",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-1"
+        },
+        {
+          "sentence": "all day did the flock.",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-2"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "story": [
+        {
+          "sentence": "But on closer inspection",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-1"
+        },
+        {
+          "sentence": "there was one that did not.",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-2"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "story": [
+        {
+          "sentence": "I'm tired of jumping,",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-1"
+        },
+        {
+          "sentence": "said the sheep that had stopped",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-2"
+        },
+        {
+          "sentence": "You carry on jumping,",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-3"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "story": [
+        {
+          "sentence": "I want to ROCK!!!",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-1"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "story": [
+        {
+          "sentence": "BaaAAAaaA ha Ha HAHAHAAA!!!",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-1"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "story": [
+        {
+          "sentence": "Oh how the flock lauged.",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-1"
+        },
+        {
+          "sentence": "Which made the sheep sad.",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-2"
+        },
+        {
+          "sentence": "They laughed mocked and pointed",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-3"
+        },
+        {
+          "sentence": "as they BAA ha ha ha ha'd.",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-4"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "story": [
+        {
+          "sentence": "Why would you want,",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-1"
+        },
+        {
+          "sentence": "to be different they bleated",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-2"
+        },
+        {
+          "sentence": "saddened, embarrassed,",
+          "timing": [
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-3"
+        },
+        {
+          "sentence": "The Rock Sheep retreated",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-4"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "story": [
+        {
+          "sentence": "So they carried on jumping",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-1"
+        },
+        {
+          "sentence": "And Rock Sheep did not",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-2"
+        },
+        {
+          "sentence": "He'd made his decision",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-3"
+        },
+        {
+          "sentence": "He wanted to ROCK!!!",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-4"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "story": [
+        {
+          "sentence": "He bought a guitar",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-1"
+        },
+        {
+          "sentence": "And practiced each day",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-2"
+        },
+        {
+          "sentence": "He wrote his own music",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-3"
+        },
+        {
+          "sentence": "Until finally",
+          "timing": [
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-4"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "story": [
+        {
+          "sentence": "He released his first album",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-1"
+        },
+        {
+          "sentence": "The critics loved it",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-2"
+        },
+        {
+          "sentence": "Hooray for the Rock Sheep!",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-3"
+        },
+        {
+          "sentence": "He was a hit!",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-4"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "story": [
+        {
+          "sentence": "He travelled the world",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-1"
+        },
+        {
+          "sentence": "He went to the moon",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-2"
+        },
+        {
+          "sentence": "He even performed",
+          "timing": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-3"
+        },
+        {
+          "sentence": "From a hot air balloon",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-4"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "story": [
+        {
+          "sentence": "And the sheep in the field",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-1"
+        },
+        {
+          "sentence": "with the little black feet",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-2"
+        },
+        {
+          "sentence": "They watched him on TV",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-3"
+        },
+        {
+          "sentence": "They read every tweet",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-4"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "story": [
+        {
+          "sentence": "They bought all his music",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-1"
+        },
+        {
+          "sentence": "They copied his moves",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-2"
+        },
+        {
+          "sentence": "They danced and they pranced",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-3"
+        },
+        {
+          "sentence": "To his number one grooves",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-4"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "story": [
+        {
+          "sentence": "And one day the Rock Sheep",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-1"
+        },
+        {
+          "sentence": "came back to the field",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-2"
+        },
+        {
+          "sentence": "He gave them a concert",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-3"
+        },
+        {
+          "sentence": "and the flock went wild",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-4"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "story": [
+        {
+          "sentence": "At the end of his set",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-1"
+        },
+        {
+          "sentence": "with guitar on his knee",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-2"
+        },
+        {
+          "sentence": "he said to the crowd",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-3"
+        },
+        {
+          "sentence": "what do you want to be?",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-4"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "story": [
+        {
+          "sentence": "We're Rock Sheep! they shouted",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-1"
+        },
+        {
+          "sentence": "and the Rock Sheep was sad",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-2"
+        },
+        {
+          "sentence": "Is there nothing else you can do",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-3"
+        },
+        {
+          "sentence": "that will make you glad?",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-4"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "story": [
+        {
+          "sentence": "You all do the same",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-1"
+        },
+        {
+          "sentence": "as each other each day",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-2"
+        },
+        {
+          "sentence": "and now I'm successful",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-3"
+        },
+        {
+          "sentence": "you're all copying me!",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-4"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "story": [
+        {
+          "sentence": "Isn't there something to try just for you?",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-1"
+        },
+        {
+          "sentence": "don't copy the others",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-2"
+        },
+        {
+          "sentence": "what do you want to do?",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-3"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "story": [
+        {
+          "sentence": "BaaAAAaaA-ha! went some sheep",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-1"
+        },
+        {
+          "sentence": "but others did not",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-2"
+        },
+        {
+          "sentence": "They boo'd at the laughers",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-3"
+        },
+        {
+          "sentence": "Until they did stop",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-4"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "story": [
+        {
+          "sentence": "Is there anything else",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-1"
+        },
+        {
+          "sentence": "that you want to be?",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-2"
+        },
+        {
+          "sentence": "You dont all have to jump",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-3"
+        },
+        {
+          "sentence": "or to copy me",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-4"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "story": [
+        {
+          "sentence": "A moment of quiet",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-1"
+        },
+        {
+          "sentence": "a murmer and then",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-2"
+        },
+        {
+          "sentence": "Some sheep started laughing",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-3"
+        },
+        {
+          "sentence": "oh no, not again...",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-4"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "story": [
+        {
+          "sentence": "I want to be a cat!",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-1"
+        },
+        {
+          "sentence": "A little sheep meowed",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-2"
+        },
+        {
+          "sentence": "And I want to float",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-3"
+        },
+        {
+          "sentence": "in the sky like a cloud",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-4"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "story": [
+        {
+          "sentence": "A pirate meharty",
+          "timing": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-1"
+        },
+        {
+          "sentence": "That's what I'll be",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-2"
+        },
+        {
+          "sentence": "And he dug up some treasure",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-3"
+        },
+        {
+          "sentence": "And skipped to the sea",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-4"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "story": [
+        {
+          "sentence": "And so it continued",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-1"
+        },
+        {
+          "sentence": "The different ideas",
+          "timing": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-2"
+        },
+        {
+          "sentence": "The Rock Sheep was happy",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-3"
+        },
+        {
+          "sentence": "there even were cheers",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-4"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "story": [
+        {
+          "sentence": "So some sheep still jumped",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-1"
+        },
+        {
+          "sentence": "and some sheep did mock",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-2"
+        },
+        {
+          "sentence": "now some sheep went MEEOOOW!!!",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-3"
+        },
+        {
+          "sentence": "go AAAARRGHHH!! WHOOOSH! and ROCK!!!",
+          "timing": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "targetDiv": ".js-sentence-4"
+        }
+      ]
+    }
+  ]
+}

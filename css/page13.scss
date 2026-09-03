@@ -1,0 +1,111 @@
+.page-13 {
+
+  .content {
+    background-image: url('../assets/img/page13/Background.png');
+  }
+
+  .clouds {
+    background-image: url('../assets/img/page13/Clouds.png');
+
+    width: 110%;
+    top: -30%;
+    left: -7%;
+    height: 100%;
+    z-index: 15;
+  }
+  .moon {
+    background-image: url('../assets/img/page13/Moon.png');
+
+    width: 30%;
+    top: 4%;
+    left: 31%;
+    height: 40%;
+    z-index: 10;
+  }
+
+  .rose1 {
+    background-image: url('../assets/img/page13/Rose_1.png');
+
+    width: 12%;
+    top: 45%;
+    left: 31%;
+    height: 15%;
+    z-index: 35;
+  }
+  .rose2 {
+    background-image: url('../assets/img/page13/Rose_2.png');
+
+    width: 12%;
+    top: 45%;
+    left: 31%;
+    height: 15%;
+    z-index: 35;
+  }
+  .rose3 {
+    background-image: url('../assets/img/page13/Rose_3.png');
+
+    width: 12%;
+    top: 45%;
+    left: 31%;
+    height: 15%;
+    z-index: 35;
+  }
+  .rose4 {
+    background-image: url('../assets/img/page13/Rose_4.png');
+
+    width: 12%;
+    top: 45%;
+    left: 31%;
+    height: 15%;
+    z-index: 35;
+  }
+
+  .rocksheep {
+    background-image: url('../assets/img/page13/Rock_Sheep.png');
+
+    width: 40%;
+    top: 1%;
+    left: 52%;
+    height: 46%;
+    z-index: 25;
+  }
+
+  .sheep {
+    background-image: url('../assets/img/page13/Sheep.png');
+
+    width: 147%;
+    top: 15%;
+    left: -24%;
+    height: 145%;
+    z-index: 40;
+  }
+
+  .spotlight {
+    background-image: url('../assets/img/page13/Spotlight.png');
+
+    width: 85%;
+    top: 2%;
+    left: 26%;
+    height: 85%;
+    z-index: 20;
+  }
+  .stage {
+    background-image: url('../assets/img/page13/Stage.png');
+
+    width: 85%;
+    top: 30%;
+    right: 0px;
+    height: 70%;
+    z-index: 30;
+  }
+  .sky {
+    background-image: url('../assets/img/page13/Stars.png');
+
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 25;
+  }
+
+}
