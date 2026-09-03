@@ -405,6 +405,13 @@ nav {
 
 }
 
+.story-star-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 100000;
+  pointer-events: none;
+}
+
 .menu-container {
 
   top: 2%;

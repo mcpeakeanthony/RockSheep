@@ -4,6 +4,235 @@
 
 var story = story || {};
 
+story.runtime = {
+    timers: [],
+    loops: [],
+    cleanups: [],
+    paused: false,
+
+    setTimeout: function (callback, delay) {
+        var timer = setTimeout(function () {
+            story.runtime.removeTimer(timer);
+            if (!story.runtime.paused) {
+                callback();
+            }
+        }, delay);
+
+        story.runtime.timers.push({id: timer, type: 'timeout'});
+        return timer;
+    },
+
+    setInterval: function (callback, delay) {
+        var timer = setInterval(function () {
+            if (!story.runtime.paused) {
+                callback();
+            }
+        }, delay);
+        story.runtime.timers.push({id: timer, type: 'interval'});
+        return timer;
+    },
+
+    clearInterval: function (timer) {
+        clearInterval(timer);
+        story.runtime.removeTimer(timer);
+    },
+
+    removeTimer: function (timer) {
+        story.runtime.timers = story.runtime.timers.filter(function (entry) {
+            return entry.id !== timer;
+        });
+    },
+
+    clear: function () {
+        story.runtime.timers.forEach(function (entry) {
+            if (entry.type === 'interval') {
+                clearInterval(entry.id);
+            } else {
+                clearTimeout(entry.id);
+            }
+        });
+        story.runtime.timers = [];
+    },
+
+    startLoop: function (callback) {
+        var loop = {callback: callback, frame: null};
+        story.runtime.loops.push(loop);
+
+        function tick(time) {
+            if (story.runtime.paused) {
+                loop.frame = null;
+                return;
+            }
+            callback(time);
+            loop.frame = requestAnimationFrame(tick);
+        }
+
+        loop.frame = requestAnimationFrame(tick);
+        return loop;
+    },
+
+    clearLoops: function () {
+        story.runtime.loops.forEach(function (loop) {
+            if (loop.frame !== null) {
+                cancelAnimationFrame(loop.frame);
+            }
+        });
+        story.runtime.loops = [];
+    },
+
+    addCleanup: function (callback) {
+        story.runtime.cleanups.push(callback);
+    },
+
+    clearCleanups: function () {
+        story.runtime.cleanups.forEach(function (callback) {
+            callback();
+        });
+        story.runtime.cleanups = [];
+    },
+
+    pause: function () {
+        if (!story.runtime.paused && typeof TweenLite !== 'undefined') {
+            story.runtime.paused = true;
+            TweenLite.ticker.sleep();
+            story.audio.pause();
+        }
+    },
+
+    resume: function () {
+        if (story.runtime.paused && typeof TweenLite !== 'undefined') {
+            story.runtime.paused = false;
+            TweenLite.ticker.wake();
+            story.audio.resume();
+            story.runtime.loops.forEach(function (loop) {
+                if (loop.frame === null) {
+                    loop.frame = requestAnimationFrame(function tick(time) {
+                        if (story.runtime.paused) {
+                            loop.frame = null;
+                            return;
+                        }
+                        loop.callback(time);
+                        loop.frame = requestAnimationFrame(tick);
+                    });
+                }
+            });
+        }
+    },
+
+    unmount: function () {
+        story.runtime.clear();
+        story.runtime.clearLoops();
+        story.runtime.clearCleanups();
+        if (typeof $ !== 'undefined') {
+            $('*').off('.storyRuntime');
+        }
+        story.audio.stopAll();
+        if (typeof TweenMax !== 'undefined') {
+            TweenMax.killAll(false, true, true, true);
+        }
+    }
+};
+
+story.audio = {
+    narration: null,
+    sounds: [],
+    paused: false,
+    unlocked: typeof Audio === 'undefined',
+    pending: null,
+
+    unlock: function () {
+        if (this.unlocked) {
+            return;
+        }
+
+        this.unlocked = true;
+        if (this.pending) {
+            var pending = this.pending;
+            this.pending = null;
+            this.play(pending.url, pending.type);
+        }
+    },
+
+    play: function (url, type) {
+        if (typeof Media === 'undefined' && !this.unlocked) {
+            this.pending = {url: url, type: type};
+            return null;
+        }
+
+        if (type === 'narration' && this.narration) {
+            this.narration.pause();
+            this.narration.currentTime = 0;
+        }
+
+        if (typeof Media !== 'undefined' && typeof cordova !== 'undefined') {
+            var media = new Media(url, null, function (error) {
+                console.log('Audio error: ' + error);
+            });
+            this.sounds.push(media);
+            media.play();
+            return media;
+        }
+
+        if (typeof Audio === 'undefined') {
+            return null;
+        }
+
+        var audio = new Audio(url);
+        audio.preload = 'auto';
+        audio.addEventListener('ended', function () {
+            var index = story.audio.sounds.indexOf(audio);
+            if (index !== -1) {
+                story.audio.sounds.splice(index, 1);
+            }
+            if (story.audio.narration === audio) {
+                story.audio.narration = null;
+            }
+        });
+        this.sounds.push(audio);
+        if (type === 'narration') {
+            this.narration = audio;
+        }
+        audio.play().catch(function (error) {
+            console.log('Audio playback unavailable: ' + error.message);
+        });
+        return audio;
+    },
+
+    pause: function () {
+        this.paused = true;
+        this.sounds.forEach(function (sound) {
+            if (typeof sound.pause === 'function') {
+                sound.pause();
+            }
+        });
+    },
+
+    resume: function () {
+        this.paused = false;
+        this.sounds.forEach(function (sound) {
+            if (typeof sound.play === 'function' && sound.currentTime > 0 && !sound.ended) {
+                sound.play().catch(function () {});
+            }
+        });
+    },
+
+    stopAll: function () {
+        this.sounds.forEach(function (sound) {
+            if (typeof sound.pause === 'function') {
+                sound.pause();
+                if (typeof sound.release === 'function') {
+                    sound.release();
+                } else {
+                    sound.src = '';
+                }
+            }
+        });
+        this.sounds = [];
+        this.narration = null;
+        this.pending = null;
+    }
+};
+
 story.config = {
 
     splitTextInfo: [],
@@ -126,7 +355,7 @@ story.config = {
             if (story.interactions.init()) {
 
 
-                setTimeout(function () {
+                story.runtime.setTimeout(function () {
 
 
                     story.effects.fadeOut('.loader');
@@ -136,7 +365,7 @@ story.config = {
                         });
 
 
-                    setTimeout(function () {
+                    story.runtime.setTimeout(function () {
                         if (story.config.readToMe) {
                             story.interactions.readToMe();
                         }
@@ -169,7 +398,7 @@ story.config = {
                 document.querySelector('.js-sentence-' + currentSentence).classList.add("cssFadeOut");
                 document.querySelector('.js-sentence-' + nextSentence).classList.add("cssFadeIn");
 
-                setTimeout(function () {
+                story.runtime.setTimeout(function () {
 
                     if (readToMe) {
                         story.interactions.readToMe();
@@ -230,11 +459,11 @@ story.config = {
 
             var sound_dir = story.config.sound_directory();
 
-            story.effects.playAudio(sound_dir + '/page' + story.config.currentPage + "/" + story.config.currentSentence + ".mp3");
+            story.effects.playAudio(sound_dir + '/page' + story.config.currentPage + "/" + story.config.currentSentence + ".mp3", 'narration');
         },
         init: function () {
 
-            $(".js-button-next").on("touchend click", function (e) {
+            $(".js-button-next").on("click.storyRuntime", function (e) {
                 e.stopPropagation();
                 e.preventDefault();
 
@@ -243,7 +472,7 @@ story.config = {
                 story.interactions.navigation.loadNextSentence(e, button);
             });
 
-            $("main p").on("touchend click", function (e) {
+            $("main p").on("click.storyRuntime", function (e) {
                 e.stopPropagation();
                 e.preventDefault();
 
@@ -257,7 +486,7 @@ story.config = {
                 //story.interactions.readToMe();
             });
 
-            $(".menu-button").on("touchend click", function (e) {
+            $(".menu-button").on("click.storyRuntime", function (e) {
                 e.stopPropagation();
                 e.preventDefault();
 
@@ -267,7 +496,11 @@ story.config = {
 
             //story.effects.addPerspective();
 
-            eval("story.page" + story.config.currentPage + "()");
+            var page = story.pages[story.config.currentPage];
+            if (typeof page !== 'function') {
+                throw new Error('No story page registered for ' + story.config.currentPage);
+            }
+            page();
 
             return true;
 
@@ -281,22 +514,11 @@ story.config = {
         fadeIn: function (x) {
             $(x).addClass('cssFadeIn');
         },
-        playAudio: function (url) {
-
-            if (story.config.isMobile()) {
-                if (story.config.sound_effects_on) {
-
-                    var media = new Media(url,
-                        function (url) {
-                            //console.log("Media success: " + url);
-                        },
-                        function (err) {
-                            console.log("playAudio():Audio Error: " + err);
-                        }
-                    );
-                    media.play();
-                }
+        playAudio: function (url, type) {
+            if (story.config.sound_effects_on || type === 'narration') {
+                return story.audio.play(url, type);
             }
+            return null;
 
         },
 
@@ -328,7 +550,7 @@ story.config = {
 
         bounce: function () {
 
-            $(".js-bounce").on("touchend click", function (e) {
+            $(".js-bounce").on("click.storyRuntime", function (e) {
 
                 if (!$(this).hasClass('js-running')) {
                     $(this).addClass('js-running');
@@ -344,7 +566,7 @@ story.config = {
                 };
 
                 //if you repeatedly click the thing sometimes this class doesnt get removed.
-                setTimeout(function () {
+                story.runtime.setTimeout(function () {
 
                     $(".js-bounce").removeClass('js-running');
 
@@ -374,24 +596,62 @@ story.config = {
             });
         },
 
-        stars: function(x){
-
-            var timingArray = [2,4,6,8,10,12,14,16,18,20];
-
-
-            for (var i = 0; i < x; i++) {
-                var star_top = story.effects.random_number(0, 100),
-                    star_left = story.effects.random_number(0, 100),
-                    star_type = story.effects.random_number(1, 3),
-                    timing = timingArray[story.effects.random_number(0, (timingArray.length-1))]
-                    star = $('<div class="star starTiming'+ timing +' star'+ star_type +'" style="top:' + star_top + '%; left:'+ star_left +'%;"></div>');
-
-                $(star).appendTo(".sky");
+        stars: function(count){
+            var sky = document.querySelector('.sky');
+            if (!sky || typeof document.createElement !== 'function' ||
+                (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) {
+                return;
             }
 
+            var canvas = document.createElement('canvas');
+            var context = canvas.getContext('2d');
+            var pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
+            var stars = [];
 
+            canvas.className = 'story-star-canvas';
+            canvas.setAttribute('aria-hidden', 'true');
+            sky.appendChild(canvas);
 
+            function resize() {
+                var width = sky.clientWidth;
+                var height = sky.clientHeight;
+                canvas.width = width * pixelRatio;
+                canvas.height = height * pixelRatio;
+                canvas.style.width = width + 'px';
+                canvas.style.height = height + 'px';
+                context.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
+            }
 
+            for (var i = 0; i < Math.min(count, 150); i++) {
+                stars.push({
+                    x: Math.random(),
+                    y: Math.random(),
+                    radius: story.effects.random_number(1, 3) / 2,
+                    phase: Math.random() * Math.PI * 2,
+                    speed: story.effects.random_number(2, 10) / 1000
+                });
+            }
+
+            resize();
+            window.addEventListener('resize', resize);
+            story.runtime.addCleanup(function () {
+                window.removeEventListener('resize', resize);
+                canvas.remove();
+            });
+            story.runtime.startLoop(function (time) {
+                var width = sky.clientWidth;
+                var height = sky.clientHeight;
+                context.clearRect(0, 0, width, height);
+                stars.forEach(function (star) {
+                    var opacity = 0.35 + ((Math.sin(time * star.speed + star.phase) + 1) * 0.325);
+                    context.globalAlpha = opacity;
+                    context.fillStyle = '#fff';
+                    context.beginPath();
+                    context.arc(star.x * width, star.y * height, star.radius, 0, Math.PI * 2);
+                    context.fill();
+                });
+                context.globalAlpha = 1;
+            });
         },
 
         //horizontal tween
@@ -429,7 +689,7 @@ story.config = {
         },
 
         cloudPing: function(){
-            $('.js-cloud-container').on("click touchend", function (e) {
+            $('.js-cloud-container').on("click.storyRuntime", function (e) {
 
                 //TweenMax.killTweensOf($(this));
 
@@ -493,7 +753,7 @@ story.config = {
                 $(this).attr('data-original-top', $(this).css('top'));
             })
 
-            $(".js-fall").on("touchend click", function (e) {
+            $(".js-fall").on("click.storyRuntime", function (e) {
                 TweenMax.killTweensOf($(this));
                 var duration = Math.floor(Math.random() * 2) + 1;
 
@@ -650,7 +910,7 @@ story.config = {
 //explode initially, and then whenever the user presses on the firework.
 
 
-            $('.js-emitter').on("touchend click", function (e) {
+            $('.js-emitter').on("click.storyRuntime", function (e) {
                 explode(emitters[0]);
             });
 
@@ -716,7 +976,7 @@ story.config = {
         hueRotate: function () {
 
 
-            $(".js-hue-rotate").on("touchend click", function (e) {
+            $(".js-hue-rotate").on("click.storyRuntime", function (e) {
 
                 e.stopPropagation();
                 e.preventDefault();
@@ -843,7 +1103,7 @@ story.config = {
 
         },
         sun: function () {
-            $('.js-sun').on("touchend click", function (e) {
+            $('.js-sun').on("click.storyRuntime", function (e) {
 
 
                 if (!$(this).hasClass('js-running')) {
@@ -902,3 +1162,27 @@ story.config = {
         story.load.init();
 
     };
+
+    document.addEventListener('visibilitychange', function () {
+        if (document.hidden) {
+            story.runtime.pause();
+        } else {
+            story.runtime.resume();
+        }
+    });
+
+    document.addEventListener('pointerdown', function () {
+        story.audio.unlock();
+    }, {capture: true, once: true});
+
+    document.addEventListener('touchstart', function () {
+        story.audio.unlock();
+    }, {capture: true, once: true});
+
+    document.addEventListener('keydown', function () {
+        story.audio.unlock();
+    }, {capture: true, once: true});
+
+    window.addEventListener('pagehide', function () {
+        story.runtime.unmount();
+    });

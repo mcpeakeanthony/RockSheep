@@ -47,7 +47,7 @@ story.page2 = function () {
     story.effects.sun();
 
     var sheep1Container = $('.js-sheep1-container');
-    sheep1Container.on("click touchend", function (e) {
+    sheep1Container.on("click.storyRuntime", function (e) {
 
         if (!$(this).hasClass('js-running')) {
             $(this).addClass('js-running');
@@ -90,7 +90,7 @@ story.page2 = function () {
 
     var sheep3Container = $('.js-sheep3-container');
 
-    sheep3Container.on("click touchend", function (e) {
+    sheep3Container.on("click.storyRuntime", function (e) {
 
         if (!$(this).hasClass('js-running')) {
             //$(this).addClass('js-running');
@@ -161,7 +161,7 @@ story.page3 = function () {
         var zzzs = $(randomSheep).find('.zzz')
 
         var zCounter = zzzs.length - 1;
-        var sleepMovement = setInterval(function () {
+        var sleepMovement = story.runtime.setInterval(function () {
 
 
             $(zzzs[zCounter]).addClass('sleep-animation');
@@ -172,14 +172,14 @@ story.page3 = function () {
 
         $(randomSheep).one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
             function (e) {
-                clearInterval(sleepMovement);
+                story.runtime.clearInterval(sleepMovement);
                 zzzs.removeClass('sleep-animation');
             });
     }
 
-    setInterval(sleepySheep, 3000);
+    story.runtime.setInterval(sleepySheep, 3000);
 
-    $('.js-moon').on("click touchend", function (e) {
+    $('.js-moon').on("click.storyRuntime", function (e) {
         TweenMax.to(this, 2, {
             rotation: '+=8640', ease: Circ.easeInOut, onComplete: function (element) {
                 TweenMax.set($(element), {clearProps: "all"});
@@ -191,7 +191,7 @@ story.page3 = function () {
         }
     });
 
-    $('.js-sleep').on("click touchend", function (e) {
+    $('.js-sleep').on("click.storyRuntime", function (e) {
 
         if (story.config.isMobile()) {
             story.effects.vibrate(100);
@@ -200,7 +200,7 @@ story.page3 = function () {
 
     });
 
-    $('.js-rocksheep').on("click touchend", function (e) {
+    $('.js-rocksheep').on("click.storyRuntime", function (e) {
 
         if (!$(this).hasClass('js-running')) {
             $(this).addClass('js-running');
@@ -269,7 +269,7 @@ story.page6 = function () {
     TweenMax.to($('.js-sheep2'), .6, {rotation: 5, yPercent: -5, ease: Power2.easeOut, yoyo: true, repeat: -1});
     TweenMax.to($('.js-sheep3'), .8, {xPercent: 15, ease: Power2.easeOut, yoyo: true, repeat: -1});
 
-    $('.js-sheep-container').on("click touchend", function (e) {
+    $('.js-sheep-container').on("click.storyRuntime", function (e) {
         TweenMax.to(this, .2, {yPercent: -15, ease: Power2.easeInOut, scale: 1.1, yoyo: true, repeat: 9});
     });
 
@@ -287,7 +287,7 @@ story.page7 = function () {
     TweenMax.to($('.js-sheep2'), .6, {rotation: 5, yPercent: -5, ease: Power2.easeOut, yoyo: true, repeat: -1});
     TweenMax.to($('.js-sheep3'), .8, {xPercent: 15, ease: Power2.easeOut, yoyo: true, repeat: -1});
 
-    $('.js-sheep-container').on("click touchend", function (e) {
+    $('.js-sheep-container').on("click.storyRuntime", function (e) {
         TweenMax.to(this, .2, {yPercent: -15, ease: Power2.easeInOut, scale: 1.1, yoyo: true, repeat: 9});
     });
 
@@ -313,17 +313,17 @@ story.page8 = function () {
     }
 
 
-    $(".sheep1-trigger").on("click touchend", function (e) {
+    $(".sheep1-trigger").on("click.storyRuntime", function (e) {
 
         $(".sheep1").trigger("click");
 
     });
 
-    $('.js-rocksheep-container').on("click touchend", function (e) {
+    $('.js-rocksheep-container').on("click.storyRuntime", function (e) {
         TweenMax.to($('.js-guitar'), .5, {rotation: 5, ease: Power2.easeInOut, yoyo: true, repeat: 3});
     });
 
-    $('.js-amplifier-container').on("click touchend", function (e) {
+    $('.js-amplifier-container').on("click.storyRuntime", function (e) {
 
 
         if (!$(this).hasClass('js-running')) {
@@ -391,7 +391,7 @@ story.page8 = function () {
 story.page9 = function () {
 
 
-    $('.js-vinyl-cover').on("click touchend", function (e) {
+    $('.js-vinyl-cover').on("click.storyRuntime", function (e) {
 
         if (story.config.isMobile()) {
             story.effects.vibrate(1000);
@@ -431,7 +431,7 @@ story.page13 = function () {
 
     story.effects.stars(300);
 
-    $('.js-moon').on("click touchend", function (e) {
+    $('.js-moon').on("click.storyRuntime", function (e) {
         TweenMax.to(this, 2, {
             rotation: '+=8640', ease: Circ.easeInOut, onComplete: function (element) {
                 TweenMax.set($(element), {clearProps: "all"});
@@ -451,7 +451,7 @@ story.page14 = function () {
 
     story.effects.stars(150);
 
-    $('.js-moon').on("click touchend", function (e) {
+    $('.js-moon').on("click.storyRuntime", function (e) {
         TweenMax.to(this, 2, {
             rotation: '+=8640', ease: Circ.easeInOut, onComplete: function (element) {
                 TweenMax.set($(element), {clearProps: "all"});
@@ -471,7 +471,7 @@ story.page15 = function () {
 
     story.effects.stars(150);
 
-    $('.js-moon').on("click touchend", function (e) {
+    $('.js-moon').on("click.storyRuntime", function (e) {
         TweenMax.to(this, 2, {
             rotation: '+=8640', ease: Circ.easeInOut, onComplete: function (element) {
                 TweenMax.set($(element), {clearProps: "all"});
@@ -551,7 +551,7 @@ story.page23 = function () {
     TweenMax.to($('.js-arm-right'), 2, {rotation: 8, ease: Power0.easeNone, repeat: -1, yoyo: true});
 
 
-    $('.js-rocksheep').on("click touchend", function (e) {
+    $('.js-rocksheep').on("click.storyRuntime", function (e) {
 
         e.stopPropagation();
         e.preventDefault();
@@ -573,12 +573,12 @@ story.page23 = function () {
         TweenMax.to($('.js-rocksheep-ear'), .4, {rotation: -20, ease: Power0.easeNone, repeat: 1, yoyo: true});
 
 
-        setTimeout(function () {
+        story.runtime.setTimeout(function () {
             $('.js-arm-left').removeClass('js-spin-once');
             $('.js-arm-right').removeClass('js-spin-once');
         }, 1100);
 
-        setTimeout(function () {
+        story.runtime.setTimeout(function () {
 
             TweenMax.to($('.js-rocksheep-head'), .5, {rotation: 0, ease: Power0.easeNone});
             TweenMax.to($('.js-rocksheep-ear'), .4, {rotation: 0, ease: Power0.easeNone});
@@ -607,7 +607,7 @@ story.page24 = function () {
 
     swimSheepTl.to($swimSheepContainer, 10, {x: 65, y: 10, ease: Power0.easeOut, repeat: -1, yoyo: true})
     TweenMax.to($swimSheepContainer2, 1, {y: 5, ease: Power0.easeOut, repeat: -1, yoyo: true});
-    $('.swim-sheep-container').on("click touchend", function (e) {
+    $('.swim-sheep-container').on("click.storyRuntime", function (e) {
 
         if (!$(this).hasClass('js-running')) {
             $(this).addClass('js-running');
@@ -698,7 +698,7 @@ story.page24 = function () {
     var splashTimeline = story.effects.splash();
     crocSheepTl.to($('.croc-sheep-arm-left'), 1.5, {rotation: 10, ease: Power2.easeOut, repeat: -1, yoyo: true});
 
-    $('.croc-sheep-container').on("click touchend", function (e) {
+    $('.croc-sheep-container').on("click.storyRuntime", function (e) {
 
         if (!$(this).hasClass('js-running')) {
             $(this).addClass('js-running');
@@ -753,7 +753,7 @@ story.page24 = function () {
     //start squirrel sheep code
 
     TweenMax.to($('.squirrel-sheep-tail'), .5, {rotation: 5, ease: Power0.easeNone, repeat: -1, yoyo: true});
-    $('.squirrel-sheep-container').on("click touchend", function (e) {
+    $('.squirrel-sheep-container').on("click.storyRuntime", function (e) {
 
         if (!$(this).hasClass('js-running')) {
             $(this).addClass('js-running');
@@ -764,7 +764,7 @@ story.page24 = function () {
                 var buzzTime = 100,
                     buzzTimeDelay = 0;
                 for (var i = 1; i < 6; i++) {
-                    setTimeout(function () {
+                    story.runtime.setTimeout(function () {
                         story.effects.vibrate(buzzTime);
                     }, buzzTimeDelay * i);
                     if (i === 1) {
@@ -794,7 +794,7 @@ story.page24 = function () {
     TweenMax.to($('.hotdog-sheep-container'), .3, {yPercent: -10, ease: Circ.easeNone, yoyo: true, repeat: -1});
     TweenMax.to($('.hotdog-sheep-container'), .7, {rotation: -4, ease: Linear.easeNone, yoyo: true, repeat: -1});
 
-    $('.hotdog-sheep-container').on("click touchend", function (e) {
+    $('.hotdog-sheep-container').on("click.storyRuntime", function (e) {
 
         if (!$(this).hasClass('js-running')) {
             $(this).addClass('js-running');
@@ -821,7 +821,7 @@ story.page24 = function () {
     TweenMax.to($('.ballerina-sheep-container'), .4, {yPercent: -10, ease: Circ.easeNone, yoyo: true, repeat: -1});
     TweenMax.to($('.ballerina-sheep-container'), .8, {rotation: -10, ease: Linear.easeNone, yoyo: true, repeat: -1});
 
-    $('.ballerina-sheep-container').on("click touchend", function (e) {
+    $('.ballerina-sheep-container').on("click.storyRuntime", function (e) {
 
         if (!$(this).hasClass('js-running')) {
             $(this).addClass('js-running');
@@ -867,7 +867,7 @@ story.page25 = function () {
     var counter = 1;
     var effects = ['js-spin-once', 'js-bounce', 'js-flip']
 
-    $('.js-circle').on("click touchend", function (e) {
+    $('.js-circle').on("click.storyRuntime", function (e) {
 
 
         story.effects.playAudio(story.config.sound_directory() + "/trill.mp3");
@@ -885,6 +885,35 @@ story.page25 = function () {
 
     });
 
+};
+
+story.pages = {
+    0: story.page0,
+    1: story.page1,
+    2: story.page2,
+    3: story.page3,
+    4: story.page4,
+    5: story.page5,
+    6: story.page6,
+    7: story.page7,
+    8: story.page8,
+    9: story.page9,
+    10: story.page10,
+    11: story.page11,
+    12: story.page12,
+    13: story.page13,
+    14: story.page14,
+    15: story.page15,
+    16: story.page16,
+    17: story.page17,
+    18: story.page18,
+    19: story.page19,
+    20: story.page20,
+    21: story.page21,
+    22: story.page22,
+    23: story.page23,
+    24: story.page24,
+    25: story.page25
 };
 
 document.addEventListener("deviceready", onDeviceReady, false);
