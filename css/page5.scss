@@ -1,20 +1,15 @@
 .page-5 {
 
-  .content {
-
-  }
+  .content {}
 
   .para1 {
-    top: 3%;
-    left: 3%;
-
-    position: fixed;
+    position: absolute;
     /* center the element */
     right: 0;
     left: 0;
     margin-right: auto;
     margin-left: auto;
-    width: 35vh;
+    width: min(90%, 400px);
     text-align: center;
     top: 5%;
   }
@@ -52,6 +47,7 @@
     animation: 20s linear infinite colorchange;
     z-index: 0;
   }
+
   .sunburst .outer {
     width: 2000px;
     height: 910px;
@@ -63,6 +59,7 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
+
   .sunburst b {
     display: block;
     width: 0;
@@ -72,37 +69,48 @@
     border-color: transparent white;
     border-style: solid;
   }
+
   .sunburst b:nth-child(1) {
     transform: rotate(20deg);
   }
+
   .sunburst b:nth-child(2) {
     transform: rotate(40deg);
   }
+
   .sunburst b:nth-child(3) {
     transform: rotate(60deg);
   }
+
   .sunburst b:nth-child(4) {
     transform: rotate(80deg);
   }
+
   .sunburst b:nth-child(5) {
     transform: rotate(100deg);
   }
+
   .sunburst b:nth-child(6) {
     transform: rotate(120deg);
   }
+
   .sunburst b:nth-child(7) {
     transform: rotate(140deg);
   }
+
   .sunburst b:nth-child(8) {
     transform: rotate(160deg);
   }
+
   .sunburst b:nth-child(9) {
     transform: rotate(180deg);
   }
+
   @keyframes rotate1 {
     from {
       transform: rotate(0deg);
     }
+
     to {
       transform: rotate(20deg);
     }
