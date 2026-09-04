@@ -1,7 +1,8 @@
 .page-8 {
 
   .content {
-    background: linear-gradient(to bottom, #3eaec2 0%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: linear-gradient(to bottom, #3eaec2 0%, #ffffff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   }
 
   .tree2 {
@@ -75,7 +76,7 @@
     right: -7%;
     height: 100%;
     z-index: 120;
-    pointer-events: none;
+    pointer-events: none !important;
   }
 
   .bird1 {
@@ -100,25 +101,27 @@
   .rocksheep {
 
 
-    &-body{
+    &-body {
       background-image: url('../assets/img/page8/Rock_Sheep.png');
       width: 100%;
       height: 100%;
     }
-    &-guitar{
+
+    &-guitar {
       background-image: url('../assets/img/page8/guitar.png');
       width: 84%;
       height: 65%;
       top: 30%;
-      left:1%;
+      left: 1%;
       transform-origin: 10% 20%;
-transform: rotate(-5deg);
+      transform: rotate(-5deg);
 
 
     }
-    &-body{}
 
-    &-container{
+    &-body {}
+
+    &-container {
       width: 47%;
       top: 0%;
       left: 16%;
@@ -133,7 +136,7 @@ transform: rotate(-5deg);
     height: 100%;
     transform-origin: 50% 85%;
 
-    &-container{
+    &-container {
       width: 23%;
       top: 34%;
       left: 74%;
@@ -144,7 +147,7 @@ transform: rotate(-5deg);
 
   }
 
-  .music-emitter{
+  .music-emitter {
     height: 10%;
     width: 10%;
     top: 45%;
@@ -153,15 +156,15 @@ transform: rotate(-5deg);
 
   }
 
-  .musical-note{
+  .musical-note {
     position: absolute;
     height: 200%;
     width: 200%;
     top: 45%;
     right: 15%;
     z-index: 400;
-opacity: 0;
-//    background-image: url('../assets/img/page8/musical-notes.svg');
+    opacity: 0;
+    //    background-image: url('../assets/img/page8/musical-notes.svg');
   }
 
 }

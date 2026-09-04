@@ -1,7 +1,8 @@
 .page-7 {
 
   .content {
-    background: linear-gradient(to bottom, #3eaec2 0%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: linear-gradient(to bottom, #3eaec2 0%, #ffffff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   }
 
   .sheep {
@@ -21,6 +22,7 @@
         right: 0;
         z-index: 3;
       }
+
       .sheep2 {
         background-image: url('../assets/img/page7/sheep2.png');
         width: 63%;
@@ -29,6 +31,7 @@
         left: 0;
         z-index: 3;
       }
+
       .sheep3 {
         background-image: url('../assets/img/page7/sheep3.png');
         width: 63%;
@@ -47,7 +50,7 @@
     top: 0px;
     left: -8%;
     z-index: 8;
-    pointer-events: none;
+    pointer-events: none !important;
   }
 
   .cloud-section {
@@ -106,7 +109,7 @@
     left: 4%;
     height: 67%;
     z-index: 80;
-    pointer-events: none;
+    pointer-events: none !important;
   }
 
 

@@ -253,7 +253,7 @@ story.page3 = function () {
 
   $(".js-moon")
     .off(".storyRuntime")
-    .on("pointerup.storyRuntime", function (e) {
+    .on("click.storyRuntime", function (e) {
       e.preventDefault();
       e.stopPropagation();
 
@@ -273,7 +273,7 @@ story.page3 = function () {
 
   $(".js-sleep")
     .off(".storyRuntime")
-    .on("pointerup.storyRuntime", function (e) {
+    .on("click.storyRuntime", function (e) {
       e.preventDefault();
       e.stopPropagation();
 
@@ -285,7 +285,7 @@ story.page3 = function () {
 
   $(".js-rocksheep")
     .off(".storyRuntime")
-    .on("pointerup.storyRuntime", function (e) {
+    .on("click.storyRuntime", function (e) {
       e.preventDefault();
       e.stopPropagation();
 
@@ -766,6 +766,109 @@ story.page22 = function () {
     story.effects.clouds();
   }
   story.effects.cloudPing();
+
+  var $pirateSheep = $(".js-pirate-sheep");
+  var $limbs = $(
+    ".pirate-sheep-arm-left, .pirate-sheep-arm-right, .pirate-sheep-foot-left, .pirate-sheep-foot-right",
+  );
+  var $armLeft = $(".pirate-sheep-arm-left");
+  var $armRight = $(".pirate-sheep-arm-right");
+  var $footLeft = $(".pirate-sheep-foot-left");
+  var $footRight = $(".pirate-sheep-foot-right");
+
+  //quick side-to-side wiggle for the arms/legs while the character is moving
+  function wiggleLimbs(duration) {
+    var reps = Math.round(duration / 0.15);
+    TweenMax.to($armLeft, 0.15, {
+      rotation: "+=10",
+      ease: Power0.easeNone,
+      repeat: reps,
+      yoyo: true,
+    });
+    TweenMax.to($armRight, 0.15, {
+      rotation: "-=10",
+      ease: Power0.easeNone,
+      repeat: reps,
+      yoyo: true,
+    });
+    TweenMax.to($footLeft, 0.15, {
+      rotation: "+=6",
+      ease: Power0.easeNone,
+      repeat: reps,
+      yoyo: true,
+    });
+    TweenMax.to($footRight, 0.15, {
+      rotation: "-=6",
+      ease: Power0.easeNone,
+      repeat: reps,
+      yoyo: true,
+    });
+  }
+
+  //up-and-down hop for the whole character while it's moving on/off screen
+  //(half-cycle count is forced even and sized to exactly fill `duration`, so the hop
+  //always lands back on yPercent 0 in sync with the horizontal tween completing)
+  function hopVertical(duration, amplitude, targetHopCycle) {
+    amplitude = amplitude || 30;
+    targetHopCycle = targetHopCycle || 0.3;
+    var halfCycles = Math.max(2, Math.round(duration / targetHopCycle));
+    if (halfCycles % 2 !== 0) {
+      halfCycles++;
+    }
+    var legDuration = duration / halfCycles;
+    TweenMax.to($pirateSheep, legDuration, {
+      yPercent: "-=" + amplitude,
+      ease: Sine.easeInOut,
+      repeat: halfCycles - 1,
+      yoyo: true,
+    });
+  }
+
+  $pirateSheep.on("click.storyRuntime", function (e) {
+    e.stopPropagation();
+    e.preventDefault();
+
+    if ($(this).hasClass("js-running")) {
+      return;
+    }
+    $(this).addClass("js-running");
+
+    if (story.config.isMobile()) {
+      story.effects.vibrate(300);
+    }
+
+    var exitDuration = 2.5;
+    var offscreenPause = 1;
+    var enterDuration = 2;
+
+    wiggleLimbs(exitDuration);
+    hopVertical(exitDuration);
+    TweenMax.to($pirateSheep, exitDuration, {
+      xPercent: -160,
+      ease: Power1.easeIn,
+      onComplete: function () {
+        TweenMax.set($limbs, { rotation: 0 });
+        TweenMax.set($pirateSheep, { xPercent: 160, yPercent: 0 });
+
+        story.runtime.setTimeout(function () {
+          wiggleLimbs(enterDuration);
+          //slower, gentler hop than the exit so the horizontal landing reads as one clean bounce, not two competing ones
+          hopVertical(enterDuration, 18, 0.5);
+          TweenMax.to($pirateSheep, enterDuration, {
+            xPercent: 0,
+            ease: Back.easeOut.config(1.2),
+            onComplete: function () {
+              TweenMax.set($limbs, { rotation: 0 });
+              TweenMax.set($pirateSheep, { yPercent: 0 });
+              $pirateSheep.removeAttr("style");
+              $limbs.removeAttr("style");
+              $pirateSheep.removeClass("js-running");
+            },
+          });
+        }, offscreenPause * 1000);
+      },
+    });
+  });
 };
 story.page23 = function () {
   for (var i = 0; i < 3; i++) {

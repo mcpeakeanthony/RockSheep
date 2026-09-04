@@ -4,9 +4,10 @@
   "version": "1.0.0",
   "description": "Animated RockSheep children's story",
   "scripts": {
-    "dev": "npm run build:css && vite",
+    "dev": "npm run build:css && npm run build:manifest && vite",
     "build:css": "sass css/main.scss css/main.css --no-source-map --style=compressed",
-    "build": "npm run build:css && vite build",
+    "build:manifest": "node scripts/generate-preload-manifest.js",
+    "build": "npm run build:css && npm run build:manifest && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {

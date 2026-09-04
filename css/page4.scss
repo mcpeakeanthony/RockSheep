@@ -1,7 +1,8 @@
 .page-4 {
 
   .content {
-    background: linear-gradient(to bottom, #3eaec2 0%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: linear-gradient(to bottom, #3eaec2 0%, #ffffff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
   }
 
@@ -18,7 +19,7 @@
     width: 100%;
     height: 100%;
 
-    &-container{
+    &-container {
       width: 37%;
       top: 7%;
       left: 14%;
@@ -56,6 +57,7 @@
     width: 100%;
     height: 100%;
   }
+
   .hill1 {
     background-image: url('../assets/img/page4/hill1.png');
     width: 80%;
@@ -63,8 +65,9 @@
     right: 10%;
     height: 25%;
     z-index: 190;
-    pointer-events: none;
+    pointer-events: none !important;
   }
+
   .hill2 {
     background-image: url('../assets/img/page4/hill2.png');
     width: 75%;
@@ -72,9 +75,10 @@
     right: 0;
     height: 30%;
     z-index: 195;
-    pointer-events: none;
+    pointer-events: none !important;
 
   }
+
   .fence1 {
     background-image: url('../assets/img/page4/fence1.png');
     width: 30%;
@@ -82,8 +86,9 @@
     right: 16%;
     height: 16%;
     z-index: 193;
-    pointer-events: none;
+    pointer-events: none !important;
   }
+
   .fence2 {
     background-image: url('../assets/img/page4/fence2.png');
     width: 20%;
@@ -91,7 +96,7 @@
     right: 0;
     height: 27%;
     z-index: 170;
-    pointer-events: none;
+    pointer-events: none !important;
   }
 
   .tree {
@@ -102,8 +107,9 @@
     right: 5%;
     height: 90%;
     z-index: 200;
-    pointer-events: none;
+    pointer-events: none !important;
   }
+
   .rock {
     background-image: url('../assets/img/page4/rock.png');
     width: 90%;
@@ -111,7 +117,7 @@
     left: 0%;
     height: 43%;
     z-index: 450;
-    pointer-events: none;
+    pointer-events: none !important;
   }
 
   .grass1 {
@@ -122,6 +128,7 @@
     height: 25%;
     z-index: 500;
   }
+
   .grass2 {
     background-image: url('../assets/img/page4/grass2.png');
     width: 12%;
@@ -130,6 +137,7 @@
     height: 20%;
     z-index: 400;
   }
+
   .grass3 {
     background-image: url('../assets/img/page4/grass3.png');
     width: 4%;
@@ -138,6 +146,7 @@
     height: 6%;
     z-index: 400;
   }
+
   .grass4 {
     background-image: url('../assets/img/page4/grass4.png');
     width: 6%;
@@ -146,7 +155,9 @@
     height: 10%;
     z-index: 400;
   }
-  .grass5, .grass6 {
+
+  .grass5,
+  .grass6 {
     background-image: url('../assets/img/page4/grass5.png');
     width: 12%;
     top: 70%;
@@ -164,13 +175,13 @@
     transform: scaleX(-1);
   }
 
-  .cloud-section{
+  .cloud-section {
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     width: 100%;
-    height:75%;
-    pointer-events: none;
+    height: 75%;
+    pointer-events: none !important;
   }
 
 

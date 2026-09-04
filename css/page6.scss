@@ -1,7 +1,8 @@
 .page-6 {
 
   .content {
-    background: linear-gradient(to bottom, #3eaec2 0%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: linear-gradient(to bottom, #3eaec2 0%, #ffffff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
   }
 
@@ -53,14 +54,14 @@
 
 
 
-    &-container{
+    &-container {
       width: 50%;
       top: 12%;
       left: 2%;
       height: 60%;
       z-index: 70;
 
-      .sheep1{
+      .sheep1 {
         background-image: url('../assets/img/page6/sheep1.png');
         width: 63%;
         height: 70%;
@@ -68,7 +69,8 @@
         left: 0;
         z-index: 3;
       }
-      .sheep2{
+
+      .sheep2 {
         background-image: url('../assets/img/page6/sheep2.png');
         width: 63%;
         height: 58%;
@@ -76,7 +78,8 @@
         right: 0;
         z-index: 3;
       }
-      .sheep3{
+
+      .sheep3 {
         background-image: url('../assets/img/page6/sheep3.png');
         width: 63%;
         height: 70%;
@@ -116,7 +119,7 @@
     text-align: center;
     top: 5%;
 
-    font-size: 8vh;
+    font-size: 5vh;
 
   }
 
